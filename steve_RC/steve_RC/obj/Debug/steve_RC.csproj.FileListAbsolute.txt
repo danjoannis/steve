@@ -1,0 +1,9 @@
+D:\My Documents\Dropbox\Engineering\STEVE\steve_RC\steve_RC\bin\Debug\steve_RC.exe.config
+D:\My Documents\Dropbox\Engineering\STEVE\steve_RC\steve_RC\bin\Debug\steve_RC.exe
+D:\My Documents\Dropbox\Engineering\STEVE\steve_RC\steve_RC\bin\Debug\steve_RC.pdb
+D:\My Documents\Dropbox\Engineering\STEVE\steve_RC\steve_RC\obj\Debug\steve_RC.csprojResolveAssemblyReference.cache
+D:\My Documents\Dropbox\Engineering\STEVE\steve_RC\steve_RC\obj\Debug\steve_RC.Main.resources
+D:\My Documents\Dropbox\Engineering\STEVE\steve_RC\steve_RC\obj\Debug\steve_RC.Properties.Resources.resources
+D:\My Documents\Dropbox\Engineering\STEVE\steve_RC\steve_RC\obj\Debug\steve_RC.csproj.GenerateResource.Cache
+D:\My Documents\Dropbox\Engineering\STEVE\steve_RC\steve_RC\obj\Debug\steve_RC.exe
+D:\My Documents\Dropbox\Engineering\STEVE\steve_RC\steve_RC\obj\Debug\steve_RC.pdb
