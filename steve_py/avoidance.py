@@ -1,3 +1,3 @@
 #!/usr/bin/env python
 
-import connect_io.py
+import connect_io
