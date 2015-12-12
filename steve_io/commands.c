@@ -71,7 +71,7 @@ void process_command()
 		else if (command_in[1] == 'B')
 		{
 			_delay_ms(4000);
-			motors_go_tank(TRUE,TRUE,100,100);
+			motors_go_tank(NEUTRAL,LEFT,100,100);
 		}
 		break;
 	case 'Q':								// Query command
