@@ -9,12 +9,12 @@ int open_port(void)
 {
 	int fd; // file description for the serial port
 
-	fd = open("/dev/ttyS0", O_RDWR | O_NOCTTY | O_NDELAY);
+	fd = open("/dev/ttyACM0", O_RDWR | O_NOCTTY | O_NDELAY);
 
 	if(fd == -1) // if open is unsucessful
 	{
-		//perror("open_port: Unable to open /dev/ttyS0 - ");
-		printf("open_port: Unable to open /dev/ttyS0. \n");
+		//perror("open_port: Unable to open /dev/ttyACM0 - ");
+		printf("open_port: Unable to open /dev/ttyACM0. \n");
 	}
 	else
 	{
@@ -29,8 +29,8 @@ int configure_port(int fd)      // configure the port
 {
 	struct termios port_settings;      // structure to store the port settings in
 
-	cfsetispeed(&port_settings, B115200);    // set baud rates
-	cfsetospeed(&port_settings, B115200);
+	cfsetispeed(&port_settings, B38400);    // set baud rates
+	cfsetospeed(&port_settings, B38400);
 
 	port_settings.c_cflag &= ~PARENB;    // set no parity, stop bits, data bits
 	port_settings.c_cflag &= ~CSTOPB;
