@@ -5,6 +5,8 @@
  *      Author: Daniel
  */
 
+#include "serial.h"
+
 int open_port(void)
 {
 	int fd; // file description for the serial port

@@ -18,3 +18,4 @@ with open('steve_log_%s.csv' % thetime, 'wb') as csvfile:
         distance = sio.readline()
         print "%s" % distance
         logwriter.writerow(['%s' % time.strftime("%Y_%m_%d_%H%M%S"),distance])
+	time.sleep(1)
