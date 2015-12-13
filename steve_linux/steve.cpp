@@ -7,7 +7,7 @@
 
 #include <iostream>		// Streams
 
-#include "serial.h"		// My serial library
+#include "rs-232.h"		// My serial library
 
 using namespace std;
 
