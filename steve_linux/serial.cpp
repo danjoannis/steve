@@ -15,6 +15,8 @@
 
 #include "serial.h"
 
+using namespace std;
+
 int open_port(void)
 {
 	int fd; // file description for the serial port
@@ -23,14 +25,11 @@ int open_port(void)
 
 	if(fd == -1) // if open is unsucessful
 	{
-		//perror("open_port: Unable to open /dev/ttyACM0 - ");
-		//printf("open_port: Unable to open /dev/ttyACM0. \n");
 		cout <<  "Unable to open /dev/ttyACM0" << endl;
 	}
 	else
 	{
 		fcntl(fd, F_SETFL, 0);
-		//printf("port is open.\n");
 		cout << "Port is open" << endl;
 	}
 
@@ -69,8 +68,6 @@ int query_modem(int fd)   // query modem with an AT command
 
 
 	write(fd, send_bytes, 13);  //Send data
-	//printf("Wrote the bytes. \n");
-	cout << "Wrote the bytes" << endl;
 
 	// do the select
 	n = select(fd + 1, &rdfs, NULL, NULL, &timeout);
@@ -78,16 +75,12 @@ int query_modem(int fd)   // query modem with an AT command
 	// check if an error has occured
 	if(n < 0)
 	{
-	 //perror("select failed\n");
 	}
 	else if (n == 0)
 	{
-	 //puts("Timeout!");
-
 	}
 	else
 	{
-	 printf("\nBytes detected on the port!\n");
 	}
 
 	return 0;
