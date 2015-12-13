@@ -5,12 +5,13 @@
  *      Author: Daniel
  */
 
-#include <unistd.h>		// UNIX standard function definitions
+//#include <unistd.h>		// UNIX standard function definitions
 #include <fcntl.h>		// File control definitions
-#include <errno.h>		// Error number definitions
+//#include <errno.h>		// Error number definitions
 #include <termios.h>	// POSIX terminal contorl definitions
 #include <time.h>		// Time calls
 #include <string.h>		// Strings
+#include <iostream>
 
 #include "serial.h"
 
@@ -23,12 +24,14 @@ int open_port(void)
 	if(fd == -1) // if open is unsucessful
 	{
 		//perror("open_port: Unable to open /dev/ttyACM0 - ");
-		printf("open_port: Unable to open /dev/ttyACM0. \n");
+		//printf("open_port: Unable to open /dev/ttyACM0. \n");
+		cout <<  "Unable to open /dev/ttyACM0" << endl;
 	}
 	else
 	{
 		fcntl(fd, F_SETFL, 0);
-		printf("port is open.\n");
+		//printf("port is open.\n");
+		cout << "Port is open" << endl;
 	}
 
 	return(fd);
@@ -66,7 +69,8 @@ int query_modem(int fd)   // query modem with an AT command
 
 
 	write(fd, send_bytes, 13);  //Send data
-	printf("Wrote the bytes. \n");
+	//printf("Wrote the bytes. \n");
+	cout << "Wrote the bytes" << endl;
 
 	// do the select
 	n = select(fd + 1, &rdfs, NULL, NULL, &timeout);
@@ -74,11 +78,12 @@ int query_modem(int fd)   // query modem with an AT command
 	// check if an error has occured
 	if(n < 0)
 	{
-	 perror("select failed\n");
+	 //perror("select failed\n");
 	}
 	else if (n == 0)
 	{
-	 puts("Timeout!");
+	 //puts("Timeout!");
+
 	}
 	else
 	{
