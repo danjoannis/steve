@@ -140,10 +140,7 @@ void process_command()
       }
       else if (command_in[2] == 'M')  // Magnetometer
       {
-        Serial.print("Trig Compass");
-        MPU_read();
-        Serial.print("Read Compass");
-        Serial.print("Done");
+        MPU_read(); 
       }
     }
     break;
@@ -387,6 +384,8 @@ void MPU_read()
   Serial.print ("\t");
   
   // End of line
-  Serial.println("");
+  Serial.print("\r\n");
+         
+  MPU_init();
 }
 
