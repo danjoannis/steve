@@ -1,0 +1,758 @@
+15:26:36 **** Clean-only build of configuration Release for project steve_arduino ****
+make clean 
+make: *** No rule to make target `clean'.  Stop.
+15:26:36 **** Build of configuration Release for project steve_arduino ****
+make all 
+Building file: ../adc.c
+Starting C compile
+"D:\My Documents\Programming\arduino\arduino-1.6.5-r5\hardware\tools\avr/bin/avr-gcc" -c -g -Os -ffunction-sections -fdata-sections -MMD -mmcu=atmega328p -DF_CPU=16000000L -DARDUINO=10605 -DARDUINO_AVR_UNO -DARDUINO_ARCH_AVR     -I"D:\My Documents\Programming\arduino\arduino-1.6.5-r5\hardware\arduino\avr\cores\arduino" -I"D:\My Documents\Programming\arduino\arduino-1.6.5-r5\hardware\arduino\avr\variants\standard" -MMD -MP -MF"adc.c.d" -MT"adc.c.o" -D__IN_ECLIPSE__=1 "../adc.c"  -o  "adc.c.o"   -Wall
+Finished building: ../adc.c
+ 
+Building file: ../commands.c
+Starting C compile
+"D:\My Documents\Programming\arduino\arduino-1.6.5-r5\hardware\tools\avr/bin/avr-gcc" -c -g -Os -ffunction-sections -fdata-sections -MMD -mmcu=atmega328p -DF_CPU=16000000L -DARDUINO=10605 -DARDUINO_AVR_UNO -DARDUINO_ARCH_AVR     -I"D:\My Documents\Programming\arduino\arduino-1.6.5-r5\hardware\arduino\avr\cores\arduino" -I"D:\My Documents\Programming\arduino\arduino-1.6.5-r5\hardware\arduino\avr\variants\standard" -MMD -MP -MF"commands.c.d" -MT"commands.c.o" -D__IN_ECLIPSE__=1 "../commands.c"  -o  "commands.c.o"   -Wall
+../commands.c:23:21: fatal error: mpu9255.h: No such file or directory
+ #include "mpu9255.h"
+                     ^
+compilation terminated.
+make: *** [commands.c.o] Error 1
+15:27:03 **** Incremental Build of configuration Release for project steve_arduino ****
+make all 
+Building file: ../commands.c
+Starting C compile
+"D:\My Documents\Programming\arduino\arduino-1.6.5-r5\hardware\tools\avr/bin/avr-gcc" -c -g -Os -ffunction-sections -fdata-sections -MMD -mmcu=atmega328p -DF_CPU=16000000L -DARDUINO=10605 -DARDUINO_AVR_UNO -DARDUINO_ARCH_AVR     -I"D:\My Documents\Programming\arduino\arduino-1.6.5-r5\hardware\arduino\avr\cores\arduino" -I"D:\My Documents\Programming\arduino\arduino-1.6.5-r5\hardware\arduino\avr\variants\standard" -MMD -MP -MF"commands.c.d" -MT"commands.c.o" -D__IN_ECLIPSE__=1 "../commands.c"  -o  "commands.c.o"   -Wall
+In file included from ../commands.c:15:0:
+../commands.c: In function 'copy_command':
+../commands.c:29:2: error: 'for' loop initial declarations are only allowed in C99 mode
+  ATOMIC_BLOCK(ATOMIC_FORCEON)
+  ^
+../commands.c:29:2: note: use option -std=c99 or -std=gnu99 to compile your code
+../commands.c:32:3: warning: passing argument 1 of 'memcpy' discards 'volatile' qualifier from pointer target type [enabled by default]
+   memcpy(command_in, data_in, 8);
+   ^
+In file included from ../commands.c:16:0:
+d:\my documents\programming\arduino\arduino-1.6.5-r5\hardware\tools\avr\avr\include\string.h:117:14: note: expected 'void *' but argument is of type 'volatile unsigned char *'
+ extern void *memcpy(void *, const void *, size_t);
+              ^
+../commands.c:32:3: warning: passing argument 2 of 'memcpy' discards 'volatile' qualifier from pointer target type [enabled by default]
+   memcpy(command_in, data_in, 8);
+   ^
+In file included from ../commands.c:16:0:
+d:\my documents\programming\arduino\arduino-1.6.5-r5\hardware\tools\avr\avr\include\string.h:117:14: note: expected 'const void *' but argument is of type 'volatile unsigned char *'
+ extern void *memcpy(void *, const void *, size_t);
+              ^
+../commands.c:35:3: warning: passing argument 1 of 'memset' makes pointer from integer without a cast [enabled by default]
+   memset(data_in[0], 0, 8);
+   ^
+In file included from ../commands.c:16:0:
+d:\my documents\programming\arduino\arduino-1.6.5-r5\hardware\tools\avr\avr\include\string.h:121:14: note: expected 'void *' but argument is of type 'unsigned char'
+ extern void *memset(void *, int, size_t);
+              ^
+make: *** [commands.c.o] Error 1
+15:30:57 **** Incremental Build of configuration Release for project steve_arduino ****
+make all 
+Building file: ../commands.c
+Starting C compile
+"D:\My Documents\Programming\arduino\arduino-1.6.5-r5\hardware\tools\avr/bin/avr-gcc" -c -g -Os -ffunction-sections -fdata-sections -MMD -mmcu=atmega328p -DF_CPU=16000000L -DARDUINO=10605 -DARDUINO_AVR_UNO -DARDUINO_ARCH_AVR     -I"D:\My Documents\Programming\arduino\arduino-1.6.5-r5\hardware\arduino\avr\cores\arduino" -I"D:\My Documents\Programming\arduino\arduino-1.6.5-r5\hardware\arduino\avr\variants\standard" -I"D:\My Documents\Programming\arduino\arduino-1.6.5-r5\hardware\arduino\avr\libraries\Wire" -I"D:\My Documents\Programming\arduino\arduino-1.6.5-r5\hardware\arduino\avr\libraries\Wire\utility" -MMD -MP -MF"commands.c.d" -MT"commands.c.o" -D__IN_ECLIPSE__=1 "../commands.c"  -o  "commands.c.o"   -Wall
+In file included from ../commands.c:15:0:
+../commands.c: In function 'copy_command':
+../commands.c:29:2: error: 'for' loop initial declarations are only allowed in C99 mode
+  ATOMIC_BLOCK(ATOMIC_FORCEON)
+  ^
+../commands.c:29:2: note: use option -std=c99 or -std=gnu99 to compile your code
+../commands.c:32:3: warning: passing argument 1 of 'memcpy' discards 'volatile' qualifier from pointer target type [enabled by default]
+   memcpy(command_in, data_in, 8);
+   ^
+In file included from ../commands.c:16:0:
+d:\my documents\programming\arduino\arduino-1.6.5-r5\hardware\tools\avr\avr\include\string.h:117:14: note: expected 'void *' but argument is of type 'volatile unsigned char *'
+ extern void *memcpy(void *, const void *, size_t);
+              ^
+../commands.c:32:3: warning: passing argument 2 of 'memcpy' discards 'volatile' qualifier from pointer target type [enabled by default]
+   memcpy(command_in, data_in, 8);
+   ^
+In file included from ../commands.c:16:0:
+d:\my documents\programming\arduino\arduino-1.6.5-r5\hardware\tools\avr\avr\include\string.h:117:14: note: expected 'const void *' but argument is of type 'volatile unsigned char *'
+ extern void *memcpy(void *, const void *, size_t);
+              ^
+../commands.c:35:3: warning: passing argument 1 of 'memset' makes pointer from integer without a cast [enabled by default]
+   memset(data_in[0], 0, 8);
+   ^
+In file included from ../commands.c:16:0:
+d:\my documents\programming\arduino\arduino-1.6.5-r5\hardware\tools\avr\avr\include\string.h:121:14: note: expected 'void *' but argument is of type 'unsigned char'
+ extern void *memset(void *, int, size_t);
+              ^
+make: *** [commands.c.o] Error 1
+15:31:57 **** Incremental Build of configuration Release for project steve_arduino ****
+make all 
+Building file: ../commands.c
+Starting C compile
+"D:\My Documents\Programming\arduino\arduino-1.6.5-r5\hardware\tools\avr/bin/avr-gcc" -c -g -Os -ffunction-sections -fdata-sections -MMD -mmcu=atmega328p -DF_CPU=16000000L -DARDUINO=10605 -DARDUINO_AVR_UNO -DARDUINO_ARCH_AVR     -I"D:\My Documents\Programming\arduino\arduino-1.6.5-r5\hardware\arduino\avr\cores\arduino" -I"D:\My Documents\Programming\arduino\arduino-1.6.5-r5\hardware\arduino\avr\variants\standard" -I"D:\My Documents\Programming\arduino\arduino-1.6.5-r5\hardware\arduino\avr\libraries\Wire" -I"D:\My Documents\Programming\arduino\arduino-1.6.5-r5\hardware\arduino\avr\libraries\Wire\utility" -MMD -MP -MF"commands.c.d" -MT"commands.c.o" -D__IN_ECLIPSE__=1 "../commands.c"  -o  "commands.c.o"   -Wall
+In file included from ../commands.c:15:0:
+../commands.c: In function 'copy_command':
+../commands.c:29:2: error: 'for' loop initial declarations are only allowed in C99 mode
+  ATOMIC_BLOCK(ATOMIC_FORCEON)
+  ^
+../commands.c:29:2: note: use option -std=c99 or -std=gnu99 to compile your code
+../commands.c:32:3: warning: passing argument 1 of 'memcpy' discards 'volatile' qualifier from pointer target type [enabled by default]
+   memcpy(command_in, data_in, 8);
+   ^
+In file included from ../commands.c:16:0:
+d:\my documents\programming\arduino\arduino-1.6.5-r5\hardware\tools\avr\avr\include\string.h:117:14: note: expected 'void *' but argument is of type 'volatile unsigned char *'
+ extern void *memcpy(void *, const void *, size_t);
+              ^
+../commands.c:32:3: warning: passing argument 2 of 'memcpy' discards 'volatile' qualifier from pointer target type [enabled by default]
+   memcpy(command_in, data_in, 8);
+   ^
+In file included from ../commands.c:16:0:
+d:\my documents\programming\arduino\arduino-1.6.5-r5\hardware\tools\avr\avr\include\string.h:117:14: note: expected 'const void *' but argument is of type 'volatile unsigned char *'
+ extern void *memcpy(void *, const void *, size_t);
+              ^
+../commands.c:35:3: warning: passing argument 1 of 'memset' makes pointer from integer without a cast [enabled by default]
+   memset(data_in[0], 0, 8);
+   ^
+In file included from ../commands.c:16:0:
+d:\my documents\programming\arduino\arduino-1.6.5-r5\hardware\tools\avr\avr\include\string.h:121:14: note: expected 'void *' but argument is of type 'unsigned char'
+ extern void *memset(void *, int, size_t);
+              ^
+make: *** [commands.c.o] Error 1
+15:32:49 **** Incremental Build of configuration Release for project steve_arduino ****
+make all 
+Building file: ../commands.c
+Starting C compile
+"D:\My Documents\Programming\arduino\arduino-1.6.5-r5\hardware\tools\avr/bin/avr-gcc" -c -g -Os -ffunction-sections -fdata-sections -MMD -mmcu=atmega328p -DF_CPU=16000000L -DARDUINO=10605 -DARDUINO_AVR_UNO -DARDUINO_ARCH_AVR     -I"D:\My Documents\Programming\arduino\arduino-1.6.5-r5\hardware\arduino\avr\cores\arduino" -I"D:\My Documents\Programming\arduino\arduino-1.6.5-r5\hardware\arduino\avr\variants\standard" -I"D:\My Documents\Programming\arduino\arduino-1.6.5-r5\hardware\arduino\avr\libraries\Wire" -I"D:\My Documents\Programming\arduino\arduino-1.6.5-r5\hardware\arduino\avr\libraries\Wire\utility" -MMD -MP -MF"commands.c.d" -MT"commands.c.o" -D__IN_ECLIPSE__=1 "../commands.c"  -o  "commands.c.o"   -Wall
+In file included from ../commands.c:15:0:
+../commands.c: In function 'copy_command':
+../commands.c:29:2: error: 'for' loop initial declarations are only allowed in C99 mode
+  ATOMIC_BLOCK(ATOMIC_FORCEON)
+  ^
+../commands.c:29:2: note: use option -std=c99 or -std=gnu99 to compile your code
+../commands.c:32:3: warning: passing argument 1 of 'memcpy' discards 'volatile' qualifier from pointer target type [enabled by default]
+   memcpy(command_in, data_in, 8);
+   ^
+In file included from ../commands.c:16:0:
+d:\my documents\programming\arduino\arduino-1.6.5-r5\hardware\tools\avr\avr\include\string.h:117:14: note: expected 'void *' but argument is of type 'volatile unsigned char *'
+ extern void *memcpy(void *, const void *, size_t);
+              ^
+../commands.c:32:3: warning: passing argument 2 of 'memcpy' discards 'volatile' qualifier from pointer target type [enabled by default]
+   memcpy(command_in, data_in, 8);
+   ^
+In file included from ../commands.c:16:0:
+d:\my documents\programming\arduino\arduino-1.6.5-r5\hardware\tools\avr\avr\include\string.h:117:14: note: expected 'const void *' but argument is of type 'volatile unsigned char *'
+ extern void *memcpy(void *, const void *, size_t);
+              ^
+../commands.c:36:11: error: incompatible types when assigning to type 'volatile unsigned char[8]' from type 'int'
+   data_in = 0;
+           ^
+make: *** [commands.c.o] Error 1
+15:33:26 **** Incremental Build of configuration Release for project steve_arduino ****
+make all 
+Building file: ../commands.c
+Starting C compile
+"D:\My Documents\Programming\arduino\arduino-1.6.5-r5\hardware\tools\avr/bin/avr-gcc" -c -g -Os -ffunction-sections -fdata-sections -MMD -mmcu=atmega328p -DF_CPU=16000000L -DARDUINO=10605 -DARDUINO_AVR_UNO -DARDUINO_ARCH_AVR     -I"D:\My Documents\Programming\arduino\arduino-1.6.5-r5\hardware\arduino\avr\cores\arduino" -I"D:\My Documents\Programming\arduino\arduino-1.6.5-r5\hardware\arduino\avr\variants\standard" -I"D:\My Documents\Programming\arduino\arduino-1.6.5-r5\hardware\arduino\avr\libraries\Wire" -I"D:\My Documents\Programming\arduino\arduino-1.6.5-r5\hardware\arduino\avr\libraries\Wire\utility" -MMD -MP -MF"commands.c.d" -MT"commands.c.o" -D__IN_ECLIPSE__=1 "../commands.c"  -o  "commands.c.o"   -Wall
+In file included from ../commands.c:15:0:
+../commands.c: In function 'copy_command':
+../commands.c:29:2: error: 'for' loop initial declarations are only allowed in C99 mode
+  ATOMIC_BLOCK(ATOMIC_FORCEON)
+  ^
+../commands.c:29:2: note: use option -std=c99 or -std=gnu99 to compile your code
+../commands.c:32:3: warning: passing argument 1 of 'memcpy' discards 'volatile' qualifier from pointer target type [enabled by default]
+   memcpy(command_in, data_in, 8);
+   ^
+In file included from ../commands.c:16:0:
+d:\my documents\programming\arduino\arduino-1.6.5-r5\hardware\tools\avr\avr\include\string.h:117:14: note: expected 'void *' but argument is of type 'volatile unsigned char *'
+ extern void *memcpy(void *, const void *, size_t);
+              ^
+../commands.c:32:3: warning: passing argument 2 of 'memcpy' discards 'volatile' qualifier from pointer target type [enabled by default]
+   memcpy(command_in, data_in, 8);
+   ^
+In file included from ../commands.c:16:0:
+d:\my documents\programming\arduino\arduino-1.6.5-r5\hardware\tools\avr\avr\include\string.h:117:14: note: expected 'const void *' but argument is of type 'volatile unsigned char *'
+ extern void *memcpy(void *, const void *, size_t);
+              ^
+../commands.c:35:3: warning: passing argument 1 of 'memset' makes pointer from integer without a cast [enabled by default]
+   memset(data_in[0], 0, 8);
+   ^
+In file included from ../commands.c:16:0:
+d:\my documents\programming\arduino\arduino-1.6.5-r5\hardware\tools\avr\avr\include\string.h:121:14: note: expected 'void *' but argument is of type 'unsigned char'
+ extern void *memset(void *, int, size_t);
+              ^
+make: *** [commands.c.o] Error 1
+15:33:36 **** Incremental Build of configuration Release for project steve_arduino ****
+make all 
+Building file: ../commands.c
+Starting C compile
+"D:\My Documents\Programming\arduino\arduino-1.6.5-r5\hardware\tools\avr/bin/avr-gcc" -c -g -Os -ffunction-sections -fdata-sections -MMD -mmcu=atmega328p -DF_CPU=16000000L -DARDUINO=10605 -DARDUINO_AVR_UNO -DARDUINO_ARCH_AVR     -I"D:\My Documents\Programming\arduino\arduino-1.6.5-r5\hardware\arduino\avr\cores\arduino" -I"D:\My Documents\Programming\arduino\arduino-1.6.5-r5\hardware\arduino\avr\variants\standard" -I"D:\My Documents\Programming\arduino\arduino-1.6.5-r5\hardware\arduino\avr\libraries\Wire" -I"D:\My Documents\Programming\arduino\arduino-1.6.5-r5\hardware\arduino\avr\libraries\Wire\utility" -MMD -MP -MF"commands.c.d" -MT"commands.c.o" -D__IN_ECLIPSE__=1 "../commands.c"  -o  "commands.c.o"   -Wall
+In file included from ../commands.c:15:0:
+../commands.c: In function 'copy_command':
+../commands.c:29:2: error: 'for' loop initial declarations are only allowed in C99 mode
+  ATOMIC_BLOCK(ATOMIC_FORCEON)
+  ^
+../commands.c:29:2: note: use option -std=c99 or -std=gnu99 to compile your code
+../commands.c:32:3: warning: passing argument 1 of 'memcpy' discards 'volatile' qualifier from pointer target type [enabled by default]
+   memcpy(command_in, data_in, 8);
+   ^
+In file included from ../commands.c:16:0:
+d:\my documents\programming\arduino\arduino-1.6.5-r5\hardware\tools\avr\avr\include\string.h:117:14: note: expected 'void *' but argument is of type 'volatile unsigned char *'
+ extern void *memcpy(void *, const void *, size_t);
+              ^
+../commands.c:32:3: warning: passing argument 2 of 'memcpy' discards 'volatile' qualifier from pointer target type [enabled by default]
+   memcpy(command_in, data_in, 8);
+   ^
+In file included from ../commands.c:16:0:
+d:\my documents\programming\arduino\arduino-1.6.5-r5\hardware\tools\avr\avr\include\string.h:117:14: note: expected 'const void *' but argument is of type 'volatile unsigned char *'
+ extern void *memcpy(void *, const void *, size_t);
+              ^
+../commands.c:35:10: error: invalid type argument of unary '*' (have 'int')
+   memset(*data_in[0], 0, 8);
+          ^
+make: *** [commands.c.o] Error 1
+15:33:43 **** Incremental Build of configuration Release for project steve_arduino ****
+make all 
+Building file: ../commands.c
+Starting C compile
+"D:\My Documents\Programming\arduino\arduino-1.6.5-r5\hardware\tools\avr/bin/avr-gcc" -c -g -Os -ffunction-sections -fdata-sections -MMD -mmcu=atmega328p -DF_CPU=16000000L -DARDUINO=10605 -DARDUINO_AVR_UNO -DARDUINO_ARCH_AVR     -I"D:\My Documents\Programming\arduino\arduino-1.6.5-r5\hardware\arduino\avr\cores\arduino" -I"D:\My Documents\Programming\arduino\arduino-1.6.5-r5\hardware\arduino\avr\variants\standard" -I"D:\My Documents\Programming\arduino\arduino-1.6.5-r5\hardware\arduino\avr\libraries\Wire" -I"D:\My Documents\Programming\arduino\arduino-1.6.5-r5\hardware\arduino\avr\libraries\Wire\utility" -MMD -MP -MF"commands.c.d" -MT"commands.c.o" -D__IN_ECLIPSE__=1 "../commands.c"  -o  "commands.c.o"   -Wall
+In file included from ../commands.c:15:0:
+../commands.c: In function 'copy_command':
+../commands.c:29:2: error: 'for' loop initial declarations are only allowed in C99 mode
+  ATOMIC_BLOCK(ATOMIC_FORCEON)
+  ^
+../commands.c:29:2: note: use option -std=c99 or -std=gnu99 to compile your code
+../commands.c:32:3: warning: passing argument 1 of 'memcpy' discards 'volatile' qualifier from pointer target type [enabled by default]
+   memcpy(command_in, data_in, 8);
+   ^
+In file included from ../commands.c:16:0:
+d:\my documents\programming\arduino\arduino-1.6.5-r5\hardware\tools\avr\avr\include\string.h:117:14: note: expected 'void *' but argument is of type 'volatile unsigned char *'
+ extern void *memcpy(void *, const void *, size_t);
+              ^
+../commands.c:32:3: warning: passing argument 2 of 'memcpy' discards 'volatile' qualifier from pointer target type [enabled by default]
+   memcpy(command_in, data_in, 8);
+   ^
+In file included from ../commands.c:16:0:
+d:\my documents\programming\arduino\arduino-1.6.5-r5\hardware\tools\avr\avr\include\string.h:117:14: note: expected 'const void *' but argument is of type 'volatile unsigned char *'
+ extern void *memcpy(void *, const void *, size_t);
+              ^
+../commands.c:35:21: error: expected expression before ',' token
+   memset(data_in[0]&, 0, 8);
+                     ^
+make: *** [commands.c.o] Error 1
+15:33:49 **** Incremental Build of configuration Release for project steve_arduino ****
+make all 
+Building file: ../commands.c
+Starting C compile
+"D:\My Documents\Programming\arduino\arduino-1.6.5-r5\hardware\tools\avr/bin/avr-gcc" -c -g -Os -ffunction-sections -fdata-sections -MMD -mmcu=atmega328p -DF_CPU=16000000L -DARDUINO=10605 -DARDUINO_AVR_UNO -DARDUINO_ARCH_AVR     -I"D:\My Documents\Programming\arduino\arduino-1.6.5-r5\hardware\arduino\avr\cores\arduino" -I"D:\My Documents\Programming\arduino\arduino-1.6.5-r5\hardware\arduino\avr\variants\standard" -I"D:\My Documents\Programming\arduino\arduino-1.6.5-r5\hardware\arduino\avr\libraries\Wire" -I"D:\My Documents\Programming\arduino\arduino-1.6.5-r5\hardware\arduino\avr\libraries\Wire\utility" -MMD -MP -MF"commands.c.d" -MT"commands.c.o" -D__IN_ECLIPSE__=1 "../commands.c"  -o  "commands.c.o"   -Wall
+In file included from ../commands.c:15:0:
+../commands.c: In function 'copy_command':
+../commands.c:29:2: error: 'for' loop initial declarations are only allowed in C99 mode
+  ATOMIC_BLOCK(ATOMIC_FORCEON)
+  ^
+../commands.c:29:2: note: use option -std=c99 or -std=gnu99 to compile your code
+../commands.c:32:3: warning: passing argument 1 of 'memcpy' discards 'volatile' qualifier from pointer target type [enabled by default]
+   memcpy(command_in, data_in, 8);
+   ^
+In file included from ../commands.c:16:0:
+d:\my documents\programming\arduino\arduino-1.6.5-r5\hardware\tools\avr\avr\include\string.h:117:14: note: expected 'void *' but argument is of type 'volatile unsigned char *'
+ extern void *memcpy(void *, const void *, size_t);
+              ^
+../commands.c:32:3: warning: passing argument 2 of 'memcpy' discards 'volatile' qualifier from pointer target type [enabled by default]
+   memcpy(command_in, data_in, 8);
+   ^
+In file included from ../commands.c:16:0:
+d:\my documents\programming\arduino\arduino-1.6.5-r5\hardware\tools\avr\avr\include\string.h:117:14: note: expected 'const void *' but argument is of type 'volatile unsigned char *'
+ extern void *memcpy(void *, const void *, size_t);
+              ^
+../commands.c:35:3: warning: passing argument 1 of 'memset' discards 'volatile' qualifier from pointer target type [enabled by default]
+   memset(data_in, 0, 8);
+   ^
+In file included from ../commands.c:16:0:
+d:\my documents\programming\arduino\arduino-1.6.5-r5\hardware\tools\avr\avr\include\string.h:121:14: note: expected 'void *' but argument is of type 'volatile unsigned char *'
+ extern void *memset(void *, int, size_t);
+              ^
+make: *** [commands.c.o] Error 1
+15:34:02 **** Incremental Build of configuration Release for project steve_arduino ****
+make all 
+Building file: ../commands.c
+Starting C compile
+"D:\My Documents\Programming\arduino\arduino-1.6.5-r5\hardware\tools\avr/bin/avr-gcc" -c -g -Os -ffunction-sections -fdata-sections -MMD -mmcu=atmega328p -DF_CPU=16000000L -DARDUINO=10605 -DARDUINO_AVR_UNO -DARDUINO_ARCH_AVR     -I"D:\My Documents\Programming\arduino\arduino-1.6.5-r5\hardware\arduino\avr\cores\arduino" -I"D:\My Documents\Programming\arduino\arduino-1.6.5-r5\hardware\arduino\avr\variants\standard" -I"D:\My Documents\Programming\arduino\arduino-1.6.5-r5\hardware\arduino\avr\libraries\Wire" -I"D:\My Documents\Programming\arduino\arduino-1.6.5-r5\hardware\arduino\avr\libraries\Wire\utility" -MMD -MP -MF"commands.c.d" -MT"commands.c.o" -D__IN_ECLIPSE__=1 "../commands.c"  -o  "commands.c.o"   -Wall
+In file included from ../commands.c:15:0:
+../commands.c: In function 'copy_command':
+../commands.c:29:2: error: 'for' loop initial declarations are only allowed in C99 mode
+  ATOMIC_BLOCK(ATOMIC_FORCEON)
+  ^
+../commands.c:29:2: note: use option -std=c99 or -std=gnu99 to compile your code
+../commands.c:32:3: warning: passing argument 1 of 'memcpy' discards 'volatile' qualifier from pointer target type [enabled by default]
+   memcpy(command_in, data_in, 8);
+   ^
+In file included from ../commands.c:16:0:
+d:\my documents\programming\arduino\arduino-1.6.5-r5\hardware\tools\avr\avr\include\string.h:117:14: note: expected 'void *' but argument is of type 'volatile unsigned char *'
+ extern void *memcpy(void *, const void *, size_t);
+              ^
+../commands.c:32:3: warning: passing argument 2 of 'memcpy' discards 'volatile' qualifier from pointer target type [enabled by default]
+   memcpy(command_in, data_in, 8);
+   ^
+In file included from ../commands.c:16:0:
+d:\my documents\programming\arduino\arduino-1.6.5-r5\hardware\tools\avr\avr\include\string.h:117:14: note: expected 'const void *' but argument is of type 'volatile unsigned char *'
+ extern void *memcpy(void *, const void *, size_t);
+              ^
+make: *** [commands.c.o] Error 1
+15:34:09 **** Incremental Build of configuration Release for project steve_arduino ****
+make all 
+Building file: ../commands.c
+Starting C compile
+"D:\My Documents\Programming\arduino\arduino-1.6.5-r5\hardware\tools\avr/bin/avr-gcc" -c -g -Os -ffunction-sections -fdata-sections -MMD -mmcu=atmega328p -DF_CPU=16000000L -DARDUINO=10605 -DARDUINO_AVR_UNO -DARDUINO_ARCH_AVR     -I"D:\My Documents\Programming\arduino\arduino-1.6.5-r5\hardware\arduino\avr\cores\arduino" -I"D:\My Documents\Programming\arduino\arduino-1.6.5-r5\hardware\arduino\avr\variants\standard" -I"D:\My Documents\Programming\arduino\arduino-1.6.5-r5\hardware\arduino\avr\libraries\Wire" -I"D:\My Documents\Programming\arduino\arduino-1.6.5-r5\hardware\arduino\avr\libraries\Wire\utility" -MMD -MP -MF"commands.c.d" -MT"commands.c.o" -D__IN_ECLIPSE__=1 "../commands.c"  -o  "commands.c.o"   -Wall
+In file included from ../commands.c:15:0:
+../commands.c: In function 'copy_command':
+../commands.c:29:2: error: 'for' loop initial declarations are only allowed in C99 mode
+  ATOMIC_BLOCK(ATOMIC_FORCEON)
+  ^
+../commands.c:29:2: note: use option -std=c99 or -std=gnu99 to compile your code
+make: *** [commands.c.o] Error 1
+15:34:14 **** Incremental Build of configuration Release for project steve_arduino ****
+make all 
+Building file: ../commands.c
+Starting C compile
+"D:\My Documents\Programming\arduino\arduino-1.6.5-r5\hardware\tools\avr/bin/avr-gcc" -c -g -Os -ffunction-sections -fdata-sections -MMD -mmcu=atmega328p -DF_CPU=16000000L -DARDUINO=10605 -DARDUINO_AVR_UNO -DARDUINO_ARCH_AVR     -I"D:\My Documents\Programming\arduino\arduino-1.6.5-r5\hardware\arduino\avr\cores\arduino" -I"D:\My Documents\Programming\arduino\arduino-1.6.5-r5\hardware\arduino\avr\variants\standard" -I"D:\My Documents\Programming\arduino\arduino-1.6.5-r5\hardware\arduino\avr\libraries\Wire" -I"D:\My Documents\Programming\arduino\arduino-1.6.5-r5\hardware\arduino\avr\libraries\Wire\utility" -MMD -MP -MF"commands.c.d" -MT"commands.c.o" -D__IN_ECLIPSE__=1 "../commands.c"  -o  "commands.c.o"   -Wall
+Finished building: ../commands.c
+ 
+Building file: ../motors.c
+Starting C compile
+"D:\My Documents\Programming\arduino\arduino-1.6.5-r5\hardware\tools\avr/bin/avr-gcc" -c -g -Os -ffunction-sections -fdata-sections -MMD -mmcu=atmega328p -DF_CPU=16000000L -DARDUINO=10605 -DARDUINO_AVR_UNO -DARDUINO_ARCH_AVR     -I"D:\My Documents\Programming\arduino\arduino-1.6.5-r5\hardware\arduino\avr\cores\arduino" -I"D:\My Documents\Programming\arduino\arduino-1.6.5-r5\hardware\arduino\avr\variants\standard" -I"D:\My Documents\Programming\arduino\arduino-1.6.5-r5\hardware\arduino\avr\libraries\Wire" -I"D:\My Documents\Programming\arduino\arduino-1.6.5-r5\hardware\arduino\avr\libraries\Wire\utility" -MMD -MP -MF"motors.c.d" -MT"motors.c.o" -D__IN_ECLIPSE__=1 "../motors.c"  -o  "motors.c.o"   -Wall
+../motors.c:12:20: fatal error: wiring.h: No such file or directory
+ #include "wiring.h"
+                    ^
+compilation terminated.
+make: *** [motors.c.o] Error 1
+15:34:28 **** Incremental Build of configuration Release for project steve_arduino ****
+make all 
+Building file: ../motors.c
+Starting C compile
+"D:\My Documents\Programming\arduino\arduino-1.6.5-r5\hardware\tools\avr/bin/avr-gcc" -c -g -Os -ffunction-sections -fdata-sections -MMD -mmcu=atmega328p -DF_CPU=16000000L -DARDUINO=10605 -DARDUINO_AVR_UNO -DARDUINO_ARCH_AVR     -I"D:\My Documents\Programming\arduino\arduino-1.6.5-r5\hardware\arduino\avr\cores\arduino" -I"D:\My Documents\Programming\arduino\arduino-1.6.5-r5\hardware\arduino\avr\variants\standard" -I"D:\My Documents\Programming\arduino\arduino-1.6.5-r5\hardware\arduino\avr\libraries\Wire" -I"D:\My Documents\Programming\arduino\arduino-1.6.5-r5\hardware\arduino\avr\libraries\Wire\utility" -MMD -MP -MF"motors.c.d" -MT"motors.c.o" -D__IN_ECLIPSE__=1 "../motors.c"  -o  "motors.c.o"   -Wall
+../motors.c: In function 'motors_drive_tank':
+../motors.c:56:2: warning: implicit declaration of function 'analogWrite' [-Wimplicit-function-declaration]
+  analogWrite(MOTOR_PORT, 255);
+  ^
+../motors.c: In function 'motors_go_tank':
+../motors.c:65:7: warning: variable 'steering_output' set but not used [-Wunused-but-set-variable]
+  char steering_output;
+       ^
+../motors.c: In function 'motors_go_car':
+../motors.c:207:3: error: 'for' loop initial declarations are only allowed in C99 mode
+   for (int i = 0; i > 4; i++)
+   ^
+../motors.c:207:3: note: use option -std=c99 or -std=gnu99 to compile your code
+make: *** [motors.c.o] Error 1
+15:37:07 **** Incremental Build of configuration Release for project steve_arduino ****
+make all 
+Building file: ../motors.c
+Starting C compile
+"D:\My Documents\Programming\arduino\arduino-1.6.5-r5\hardware\tools\avr/bin/avr-gcc" -c -g -Os -ffunction-sections -fdata-sections -MMD -mmcu=atmega328p -DF_CPU=16000000L -DARDUINO=10605 -DARDUINO_AVR_UNO -DARDUINO_ARCH_AVR     -I"D:\My Documents\Programming\arduino\arduino-1.6.5-r5\hardware\arduino\avr\cores\arduino" -I"D:\My Documents\Programming\arduino\arduino-1.6.5-r5\hardware\arduino\avr\variants\standard" -I"D:\My Documents\Programming\arduino\arduino-1.6.5-r5\hardware\arduino\avr\libraries\Wire" -I"D:\My Documents\Programming\arduino\arduino-1.6.5-r5\hardware\arduino\avr\libraries\Wire\utility" -MMD -MP -MF"motors.c.d" -MT"motors.c.o" -D__IN_ECLIPSE__=1 "../motors.c"  -o  "motors.c.o"   -Wall
+../motors.c: In function 'motors_drive_tank':
+../motors.c:56:2: warning: implicit declaration of function 'analogWrite' [-Wimplicit-function-declaration]
+  analogWrite(MOTOR_PORT, 255);
+  ^
+../motors.c: In function 'motors_go_tank':
+../motors.c:65:7: warning: variable 'steering_output' set but not used [-Wunused-but-set-variable]
+  char steering_output;
+       ^
+In file included from ../motors.c:9:0:
+d:\my documents\programming\arduino\arduino-1.6.5-r5\hardware\tools\avr\avr\include\util\delay.h: In function 'motors_drive_tank':
+d:\my documents\programming\arduino\arduino-1.6.5-r5\hardware\tools\avr\avr\include\util\delay.h:245:28: error: __builtin_avr_delay_cycles expects a compile time integer constant
+  __builtin_avr_delay_cycles(__ticks_dc);
+                            ^
+d:\my documents\programming\arduino\arduino-1.6.5-r5\hardware\tools\avr\avr\include\util\delay.h:245:28: error: __builtin_avr_delay_cycles expects a compile time integer constant
+  __builtin_avr_delay_cycles(__ticks_dc);
+                            ^
+../motors.c: In function 'motors_go_tank':
+../motors.c:101:14: warning: 'drive_output' may be used uninitialized in this function [-Wmaybe-uninitialized]
+   MOTOR_PORT |= drive_output;
+              ^
+In file included from ../motors.c:9:0:
+d:\my documents\programming\arduino\arduino-1.6.5-r5\hardware\tools\avr\avr\include\util\delay.h:245:28: error: __builtin_avr_delay_cycles expects a compile time integer constant
+  __builtin_avr_delay_cycles(__ticks_dc);
+                            ^
+d:\my documents\programming\arduino\arduino-1.6.5-r5\hardware\tools\avr\avr\include\util\delay.h:245:28: error: __builtin_avr_delay_cycles expects a compile time integer constant
+  __builtin_avr_delay_cycles(__ticks_dc);
+                            ^
+d:\my documents\programming\arduino\arduino-1.6.5-r5\hardware\tools\avr\avr\include\util\delay.h: In function 'motors_turn_tank':
+d:\my documents\programming\arduino\arduino-1.6.5-r5\hardware\tools\avr\avr\include\util\delay.h:245:28: error: __builtin_avr_delay_cycles expects a compile time integer constant
+  __builtin_avr_delay_cycles(__ticks_dc);
+                            ^
+d:\my documents\programming\arduino\arduino-1.6.5-r5\hardware\tools\avr\avr\include\util\delay.h:245:28: error: __builtin_avr_delay_cycles expects a compile time integer constant
+  __builtin_avr_delay_cycles(__ticks_dc);
+                            ^
+d:\my documents\programming\arduino\arduino-1.6.5-r5\hardware\tools\avr\avr\include\util\delay.h: In function 'motors_drive_car':
+d:\my documents\programming\arduino\arduino-1.6.5-r5\hardware\tools\avr\avr\include\util\delay.h:245:28: error: __builtin_avr_delay_cycles expects a compile time integer constant
+  __builtin_avr_delay_cycles(__ticks_dc);
+                            ^
+d:\my documents\programming\arduino\arduino-1.6.5-r5\hardware\tools\avr\avr\include\util\delay.h:245:28: error: __builtin_avr_delay_cycles expects a compile time integer constant
+  __builtin_avr_delay_cycles(__ticks_dc);
+                            ^
+d:\my documents\programming\arduino\arduino-1.6.5-r5\hardware\tools\avr\avr\include\util\delay.h: In function 'motors_turn_car':
+d:\my documents\programming\arduino\arduino-1.6.5-r5\hardware\tools\avr\avr\include\util\delay.h:245:28: error: __builtin_avr_delay_cycles expects a compile time integer constant
+  __builtin_avr_delay_cycles(__ticks_dc);
+                            ^
+d:\my documents\programming\arduino\arduino-1.6.5-r5\hardware\tools\avr\avr\include\util\delay.h:245:28: error: __builtin_avr_delay_cycles expects a compile time integer constant
+  __builtin_avr_delay_cycles(__ticks_dc);
+                            ^
+make: *** [motors.c.o] Error 1
+15:37:53 **** Incremental Build of configuration Release for project steve_arduino ****
+make all 
+Building file: ../motors.c
+Starting C compile
+"D:\My Documents\Programming\arduino\arduino-1.6.5-r5\hardware\tools\avr/bin/avr-gcc" -c -g -Os -ffunction-sections -fdata-sections -MMD -mmcu=atmega328p -DF_CPU=16000000L -DARDUINO=10605 -DARDUINO_AVR_UNO -DARDUINO_ARCH_AVR     -I"D:\My Documents\Programming\arduino\arduino-1.6.5-r5\hardware\arduino\avr\cores\arduino" -I"D:\My Documents\Programming\arduino\arduino-1.6.5-r5\hardware\arduino\avr\variants\standard" -I"D:\My Documents\Programming\arduino\arduino-1.6.5-r5\hardware\arduino\avr\libraries\Wire" -I"D:\My Documents\Programming\arduino\arduino-1.6.5-r5\hardware\arduino\avr\libraries\Wire\utility" -MMD -MP -MF"motors.c.d" -MT"motors.c.o" -D__IN_ECLIPSE__=1 "../motors.c"  -o  "motors.c.o"   -Wall
+../motors.c: In function 'motors_go_tank':
+../motors.c:66:7: warning: variable 'steering_output' set but not used [-Wunused-but-set-variable]
+  char steering_output;
+       ^
+In file included from ../motors.c:9:0:
+d:\my documents\programming\arduino\arduino-1.6.5-r5\hardware\tools\avr\avr\include\util\delay.h: In function 'motors_drive_tank':
+d:\my documents\programming\arduino\arduino-1.6.5-r5\hardware\tools\avr\avr\include\util\delay.h:245:28: error: __builtin_avr_delay_cycles expects a compile time integer constant
+  __builtin_avr_delay_cycles(__ticks_dc);
+                            ^
+d:\my documents\programming\arduino\arduino-1.6.5-r5\hardware\tools\avr\avr\include\util\delay.h:245:28: error: __builtin_avr_delay_cycles expects a compile time integer constant
+  __builtin_avr_delay_cycles(__ticks_dc);
+                            ^
+../motors.c: In function 'motors_go_tank':
+../motors.c:102:14: warning: 'drive_output' may be used uninitialized in this function [-Wmaybe-uninitialized]
+   MOTOR_PORT |= drive_output;
+              ^
+In file included from ../motors.c:9:0:
+d:\my documents\programming\arduino\arduino-1.6.5-r5\hardware\tools\avr\avr\include\util\delay.h:245:28: error: __builtin_avr_delay_cycles expects a compile time integer constant
+  __builtin_avr_delay_cycles(__ticks_dc);
+                            ^
+d:\my documents\programming\arduino\arduino-1.6.5-r5\hardware\tools\avr\avr\include\util\delay.h:245:28: error: __builtin_avr_delay_cycles expects a compile time integer constant
+  __builtin_avr_delay_cycles(__ticks_dc);
+                            ^
+d:\my documents\programming\arduino\arduino-1.6.5-r5\hardware\tools\avr\avr\include\util\delay.h: In function 'motors_turn_tank':
+d:\my documents\programming\arduino\arduino-1.6.5-r5\hardware\tools\avr\avr\include\util\delay.h:245:28: error: __builtin_avr_delay_cycles expects a compile time integer constant
+  __builtin_avr_delay_cycles(__ticks_dc);
+                            ^
+d:\my documents\programming\arduino\arduino-1.6.5-r5\hardware\tools\avr\avr\include\util\delay.h:245:28: error: __builtin_avr_delay_cycles expects a compile time integer constant
+  __builtin_avr_delay_cycles(__ticks_dc);
+                            ^
+d:\my documents\programming\arduino\arduino-1.6.5-r5\hardware\tools\avr\avr\include\util\delay.h: In function 'motors_drive_car':
+d:\my documents\programming\arduino\arduino-1.6.5-r5\hardware\tools\avr\avr\include\util\delay.h:245:28: error: __builtin_avr_delay_cycles expects a compile time integer constant
+  __builtin_avr_delay_cycles(__ticks_dc);
+                            ^
+d:\my documents\programming\arduino\arduino-1.6.5-r5\hardware\tools\avr\avr\include\util\delay.h:245:28: error: __builtin_avr_delay_cycles expects a compile time integer constant
+  __builtin_avr_delay_cycles(__ticks_dc);
+                            ^
+d:\my documents\programming\arduino\arduino-1.6.5-r5\hardware\tools\avr\avr\include\util\delay.h: In function 'motors_turn_car':
+d:\my documents\programming\arduino\arduino-1.6.5-r5\hardware\tools\avr\avr\include\util\delay.h:245:28: error: __builtin_avr_delay_cycles expects a compile time integer constant
+  __builtin_avr_delay_cycles(__ticks_dc);
+                            ^
+d:\my documents\programming\arduino\arduino-1.6.5-r5\hardware\tools\avr\avr\include\util\delay.h:245:28: error: __builtin_avr_delay_cycles expects a compile time integer constant
+  __builtin_avr_delay_cycles(__ticks_dc);
+                            ^
+make: *** [motors.c.o] Error 1
+15:38:33 **** Incremental Build of configuration Release for project steve_arduino ****
+make all 
+Building file: ../commands.c
+Starting C compile
+"D:\My Documents\Programming\arduino\arduino-1.6.5-r5\hardware\tools\avr/bin/avr-gcc" -c -g -Os -ffunction-sections -fdata-sections -MMD -mmcu=atmega328p -DF_CPU=16000000L -DARDUINO=10605 -DARDUINO_AVR_UNO -DARDUINO_ARCH_AVR     -I"D:\My Documents\Programming\arduino\arduino-1.6.5-r5\hardware\arduino\avr\cores\arduino" -I"D:\My Documents\Programming\arduino\arduino-1.6.5-r5\hardware\arduino\avr\variants\standard" -I"D:\My Documents\Programming\arduino\arduino-1.6.5-r5\hardware\arduino\avr\libraries\Wire" -I"D:\My Documents\Programming\arduino\arduino-1.6.5-r5\hardware\arduino\avr\libraries\Wire\utility" -MMD -MP -MF"commands.c.d" -MT"commands.c.o" -D__IN_ECLIPSE__=1 "../commands.c"  -o  "commands.c.o"   -Wall
+Finished building: ../commands.c
+ 
+Building file: ../motors.c
+Starting C compile
+"D:\My Documents\Programming\arduino\arduino-1.6.5-r5\hardware\tools\avr/bin/avr-gcc" -c -g -Os -ffunction-sections -fdata-sections -MMD -mmcu=atmega328p -DF_CPU=16000000L -DARDUINO=10605 -DARDUINO_AVR_UNO -DARDUINO_ARCH_AVR     -I"D:\My Documents\Programming\arduino\arduino-1.6.5-r5\hardware\arduino\avr\cores\arduino" -I"D:\My Documents\Programming\arduino\arduino-1.6.5-r5\hardware\arduino\avr\variants\standard" -I"D:\My Documents\Programming\arduino\arduino-1.6.5-r5\hardware\arduino\avr\libraries\Wire" -I"D:\My Documents\Programming\arduino\arduino-1.6.5-r5\hardware\arduino\avr\libraries\Wire\utility" -MMD -MP -MF"motors.c.d" -MT"motors.c.o" -D__IN_ECLIPSE__=1 "../motors.c"  -o  "motors.c.o"   -Wall
+../motors.c: In function 'motors_go_tank':
+../motors.c:66:7: warning: variable 'steering_output' set but not used [-Wunused-but-set-variable]
+  char steering_output;
+       ^
+In file included from ../motors.c:9:0:
+d:\my documents\programming\arduino\arduino-1.6.5-r5\hardware\tools\avr\avr\include\util\delay.h: In function 'motors_drive_tank':
+d:\my documents\programming\arduino\arduino-1.6.5-r5\hardware\tools\avr\avr\include\util\delay.h:245:28: error: __builtin_avr_delay_cycles expects a compile time integer constant
+  __builtin_avr_delay_cycles(__ticks_dc);
+                            ^
+d:\my documents\programming\arduino\arduino-1.6.5-r5\hardware\tools\avr\avr\include\util\delay.h:245:28: error: __builtin_avr_delay_cycles expects a compile time integer constant
+  __builtin_avr_delay_cycles(__ticks_dc);
+                            ^
+../motors.c: In function 'motors_go_tank':
+../motors.c:102:14: warning: 'drive_output' may be used uninitialized in this function [-Wmaybe-uninitialized]
+   MOTOR_PORT |= drive_output;
+              ^
+In file included from ../motors.c:9:0:
+d:\my documents\programming\arduino\arduino-1.6.5-r5\hardware\tools\avr\avr\include\util\delay.h:245:28: error: __builtin_avr_delay_cycles expects a compile time integer constant
+  __builtin_avr_delay_cycles(__ticks_dc);
+                            ^
+d:\my documents\programming\arduino\arduino-1.6.5-r5\hardware\tools\avr\avr\include\util\delay.h:245:28: error: __builtin_avr_delay_cycles expects a compile time integer constant
+  __builtin_avr_delay_cycles(__ticks_dc);
+                            ^
+d:\my documents\programming\arduino\arduino-1.6.5-r5\hardware\tools\avr\avr\include\util\delay.h: In function 'motors_turn_tank':
+d:\my documents\programming\arduino\arduino-1.6.5-r5\hardware\tools\avr\avr\include\util\delay.h:245:28: error: __builtin_avr_delay_cycles expects a compile time integer constant
+  __builtin_avr_delay_cycles(__ticks_dc);
+                            ^
+d:\my documents\programming\arduino\arduino-1.6.5-r5\hardware\tools\avr\avr\include\util\delay.h:245:28: error: __builtin_avr_delay_cycles expects a compile time integer constant
+  __builtin_avr_delay_cycles(__ticks_dc);
+                            ^
+d:\my documents\programming\arduino\arduino-1.6.5-r5\hardware\tools\avr\avr\include\util\delay.h: In function 'motors_drive_car':
+d:\my documents\programming\arduino\arduino-1.6.5-r5\hardware\tools\avr\avr\include\util\delay.h:245:28: error: __builtin_avr_delay_cycles expects a compile time integer constant
+  __builtin_avr_delay_cycles(__ticks_dc);
+                            ^
+d:\my documents\programming\arduino\arduino-1.6.5-r5\hardware\tools\avr\avr\include\util\delay.h:245:28: error: __builtin_avr_delay_cycles expects a compile time integer constant
+  __builtin_avr_delay_cycles(__ticks_dc);
+                            ^
+d:\my documents\programming\arduino\arduino-1.6.5-r5\hardware\tools\avr\avr\include\util\delay.h: In function 'motors_turn_car':
+d:\my documents\programming\arduino\arduino-1.6.5-r5\hardware\tools\avr\avr\include\util\delay.h:245:28: error: __builtin_avr_delay_cycles expects a compile time integer constant
+  __builtin_avr_delay_cycles(__ticks_dc);
+                            ^
+d:\my documents\programming\arduino\arduino-1.6.5-r5\hardware\tools\avr\avr\include\util\delay.h:245:28: error: __builtin_avr_delay_cycles expects a compile time integer constant
+  __builtin_avr_delay_cycles(__ticks_dc);
+                            ^
+make: *** [motors.c.o] Error 1
+15:39:41 **** Incremental Build of configuration Release for project steve_arduino ****
+make all 
+Building file: ../motors.c
+Starting C compile
+"D:\My Documents\Programming\arduino\arduino-1.6.5-r5\hardware\tools\avr/bin/avr-gcc" -c -g -Os -ffunction-sections -fdata-sections -MMD -mmcu=atmega328p -DF_CPU=16000000L -DARDUINO=10605 -DARDUINO_AVR_UNO -DARDUINO_ARCH_AVR     -I"D:\My Documents\Programming\arduino\arduino-1.6.5-r5\hardware\arduino\avr\cores\arduino" -I"D:\My Documents\Programming\arduino\arduino-1.6.5-r5\hardware\arduino\avr\variants\standard" -I"D:\My Documents\Programming\arduino\arduino-1.6.5-r5\hardware\arduino\avr\libraries\Wire" -I"D:\My Documents\Programming\arduino\arduino-1.6.5-r5\hardware\arduino\avr\libraries\Wire\utility" -MMD -MP -MF"motors.c.d" -MT"motors.c.o" -D__IN_ECLIPSE__=1 "../motors.c"  -o  "motors.c.o"   -Wall
+../motors.c: In function 'motors_go_tank':
+../motors.c:66:7: warning: variable 'steering_output' set but not used [-Wunused-but-set-variable]
+  char steering_output;
+       ^
+../motors.c:102:14: warning: 'drive_output' may be used uninitialized in this function [-Wmaybe-uninitialized]
+   MOTOR_PORT |= drive_output;
+              ^
+Finished building: ../motors.c
+ 
+Building file: ../mpu9255.c
+Starting C compile
+"D:\My Documents\Programming\arduino\arduino-1.6.5-r5\hardware\tools\avr/bin/avr-gcc" -c -g -Os -ffunction-sections -fdata-sections -MMD -mmcu=atmega328p -DF_CPU=16000000L -DARDUINO=10605 -DARDUINO_AVR_UNO -DARDUINO_ARCH_AVR     -I"D:\My Documents\Programming\arduino\arduino-1.6.5-r5\hardware\arduino\avr\cores\arduino" -I"D:\My Documents\Programming\arduino\arduino-1.6.5-r5\hardware\arduino\avr\variants\standard" -I"D:\My Documents\Programming\arduino\arduino-1.6.5-r5\hardware\arduino\avr\libraries\Wire" -I"D:\My Documents\Programming\arduino\arduino-1.6.5-r5\hardware\arduino\avr\libraries\Wire\utility" -MMD -MP -MF"mpu9255.c.d" -MT"mpu9255.c.o" -D__IN_ECLIPSE__=1 "../mpu9255.c"  -o  "mpu9255.c.o"   -Wall
+../mpu9255.c:9:17: fatal error: i2c.h: No such file or directory
+ #include "i2c.h"
+                 ^
+compilation terminated.
+make: *** [mpu9255.c.o] Error 1
+15:40:31 **** Incremental Build of configuration Release for project steve_arduino ****
+make all 
+Building file: ../i2c.c
+Starting C compile
+"D:\My Documents\Programming\arduino\arduino-1.6.5-r5\hardware\tools\avr/bin/avr-gcc" -c -g -Os -ffunction-sections -fdata-sections -MMD -mmcu=atmega328p -DF_CPU=16000000L -DARDUINO=10605 -DARDUINO_AVR_UNO -DARDUINO_ARCH_AVR     -I"D:\My Documents\Programming\arduino\arduino-1.6.5-r5\hardware\arduino\avr\cores\arduino" -I"D:\My Documents\Programming\arduino\arduino-1.6.5-r5\hardware\arduino\avr\variants\standard" -I"D:\My Documents\Programming\arduino\arduino-1.6.5-r5\hardware\arduino\avr\libraries\Wire" -I"D:\My Documents\Programming\arduino\arduino-1.6.5-r5\hardware\arduino\avr\libraries\Wire\utility" -MMD -MP -MF"i2c.c.d" -MT"i2c.c.o" -D__IN_ECLIPSE__=1 "../i2c.c"  -o  "i2c.c.o"   -Wall
+Finished building: ../i2c.c
+ 
+Building file: ../mpu9255.c
+Starting C compile
+"D:\My Documents\Programming\arduino\arduino-1.6.5-r5\hardware\tools\avr/bin/avr-gcc" -c -g -Os -ffunction-sections -fdata-sections -MMD -mmcu=atmega328p -DF_CPU=16000000L -DARDUINO=10605 -DARDUINO_AVR_UNO -DARDUINO_ARCH_AVR     -I"D:\My Documents\Programming\arduino\arduino-1.6.5-r5\hardware\arduino\avr\cores\arduino" -I"D:\My Documents\Programming\arduino\arduino-1.6.5-r5\hardware\arduino\avr\variants\standard" -I"D:\My Documents\Programming\arduino\arduino-1.6.5-r5\hardware\arduino\avr\libraries\Wire" -I"D:\My Documents\Programming\arduino\arduino-1.6.5-r5\hardware\arduino\avr\libraries\Wire\utility" -MMD -MP -MF"mpu9255.c.d" -MT"mpu9255.c.o" -D__IN_ECLIPSE__=1 "../mpu9255.c"  -o  "mpu9255.c.o"   -Wall
+In file included from D:\My Documents\Programming\arduino\arduino-1.6.5-r5\hardware\arduino\avr\cores\arduino/Print.h:27:0,
+                 from D:\My Documents\Programming\arduino\arduino-1.6.5-r5\hardware\arduino\avr\cores\arduino/Stream.h:26,
+                 from D:\My Documents\Programming\arduino\arduino-1.6.5-r5\hardware\arduino\avr\libraries\Wire/Wire.h:26,
+                 from ../mpu9255.c:10:
+D:\My Documents\Programming\arduino\arduino-1.6.5-r5\hardware\arduino\avr\cores\arduino/Printable.h:25:1: error: unknown type name 'class'
+ class Print;
+ ^
+D:\My Documents\Programming\arduino\arduino-1.6.5-r5\hardware\arduino\avr\cores\arduino/Printable.h:33:1: error: unknown type name 'class'
+ class Printable
+ ^
+D:\My Documents\Programming\arduino\arduino-1.6.5-r5\hardware\arduino\avr\cores\arduino/Printable.h:34:1: error: expected '=', ',', ';', 'asm' or '__attribute__' before '{' token
+ {
+ ^
+In file included from D:\My Documents\Programming\arduino\arduino-1.6.5-r5\hardware\arduino\avr\cores\arduino/Stream.h:26:0,
+                 from D:\My Documents\Programming\arduino\arduino-1.6.5-r5\hardware\arduino\avr\libraries\Wire/Wire.h:26,
+                 from ../mpu9255.c:10:
+D:\My Documents\Programming\arduino\arduino-1.6.5-r5\hardware\arduino\avr\cores\arduino/Print.h:34:1: error: unknown type name 'class'
+ class Print
+ ^
+D:\My Documents\Programming\arduino\arduino-1.6.5-r5\hardware\arduino\avr\cores\arduino/Print.h:35:1: error: expected '=', ',', ';', 'asm' or '__attribute__' before '{' token
+ {
+ ^
+In file included from D:\My Documents\Programming\arduino\arduino-1.6.5-r5\hardware\arduino\avr\libraries\Wire/Wire.h:26:0,
+                 from ../mpu9255.c:10:
+D:\My Documents\Programming\arduino\arduino-1.6.5-r5\hardware\arduino\avr\cores\arduino/Stream.h:38:1: error: unknown type name 'class'
+ class Stream : public Print
+ ^
+D:\My Documents\Programming\arduino\arduino-1.6.5-r5\hardware\arduino\avr\cores\arduino/Stream.h:38:14: error: expected '=', ',', ';', 'asm' or '__attribute__' before ':' token
+ class Stream : public Print
+              ^
+In file included from ../mpu9255.c:10:0:
+D:\My Documents\Programming\arduino\arduino-1.6.5-r5\hardware\arduino\avr\libraries\Wire/Wire.h:30:1: error: unknown type name 'class'
+ class TwoWire : public Stream
+ ^
+D:\My Documents\Programming\arduino\arduino-1.6.5-r5\hardware\arduino\avr\libraries\Wire/Wire.h:30:15: error: expected '=', ',', ';', 'asm' or '__attribute__' before ':' token
+ class TwoWire : public Stream
+               ^
+D:\My Documents\Programming\arduino\arduino-1.6.5-r5\hardware\arduino\avr\libraries\Wire/Wire.h:77:1: error: unknown type name 'TwoWire'
+ extern TwoWire Wire;
+ ^
+make: *** [mpu9255.c.o] Error 1
+15:41:11 **** Incremental Build of configuration Release for project steve_arduino ****
+make all 
+Building file: ../mpu9255.c
+Starting C compile
+"D:\My Documents\Programming\arduino\arduino-1.6.5-r5\hardware\tools\avr/bin/avr-gcc" -c -g -Os -ffunction-sections -fdata-sections -MMD -mmcu=atmega328p -DF_CPU=16000000L -DARDUINO=10605 -DARDUINO_AVR_UNO -DARDUINO_ARCH_AVR     -I"D:\My Documents\Programming\arduino\arduino-1.6.5-r5\hardware\arduino\avr\cores\arduino" -I"D:\My Documents\Programming\arduino\arduino-1.6.5-r5\hardware\arduino\avr\variants\standard" -I"D:\My Documents\Programming\arduino\arduino-1.6.5-r5\hardware\arduino\avr\libraries\Wire" -I"D:\My Documents\Programming\arduino\arduino-1.6.5-r5\hardware\arduino\avr\libraries\Wire\utility" -MMD -MP -MF"mpu9255.c.d" -MT"mpu9255.c.o" -D__IN_ECLIPSE__=1 "../mpu9255.c"  -o  "mpu9255.c.o"   -Wall
+In file included from D:\My Documents\Programming\arduino\arduino-1.6.5-r5\hardware\arduino\avr\cores\arduino/Print.h:27:0,
+                 from D:\My Documents\Programming\arduino\arduino-1.6.5-r5\hardware\arduino\avr\cores\arduino/Stream.h:26,
+                 from D:\My Documents\Programming\arduino\arduino-1.6.5-r5\hardware\arduino\avr\libraries\Wire/Wire.h:26,
+                 from ../mpu9255.c:10:
+D:\My Documents\Programming\arduino\arduino-1.6.5-r5\hardware\arduino\avr\cores\arduino/Printable.h:25:1: error: unknown type name 'class'
+ class Print;
+ ^
+D:\My Documents\Programming\arduino\arduino-1.6.5-r5\hardware\arduino\avr\cores\arduino/Printable.h:33:1: error: unknown type name 'class'
+ class Printable
+ ^
+D:\My Documents\Programming\arduino\arduino-1.6.5-r5\hardware\arduino\avr\cores\arduino/Printable.h:34:1: error: expected '=', ',', ';', 'asm' or '__attribute__' before '{' token
+ {
+ ^
+In file included from D:\My Documents\Programming\arduino\arduino-1.6.5-r5\hardware\arduino\avr\cores\arduino/Stream.h:26:0,
+                 from D:\My Documents\Programming\arduino\arduino-1.6.5-r5\hardware\arduino\avr\libraries\Wire/Wire.h:26,
+                 from ../mpu9255.c:10:
+D:\My Documents\Programming\arduino\arduino-1.6.5-r5\hardware\arduino\avr\cores\arduino/Print.h:34:1: error: unknown type name 'class'
+ class Print
+ ^
+D:\My Documents\Programming\arduino\arduino-1.6.5-r5\hardware\arduino\avr\cores\arduino/Print.h:35:1: error: expected '=', ',', ';', 'asm' or '__attribute__' before '{' token
+ {
+ ^
+In file included from D:\My Documents\Programming\arduino\arduino-1.6.5-r5\hardware\arduino\avr\libraries\Wire/Wire.h:26:0,
+                 from ../mpu9255.c:10:
+D:\My Documents\Programming\arduino\arduino-1.6.5-r5\hardware\arduino\avr\cores\arduino/Stream.h:38:1: error: unknown type name 'class'
+ class Stream : public Print
+ ^
+D:\My Documents\Programming\arduino\arduino-1.6.5-r5\hardware\arduino\avr\cores\arduino/Stream.h:38:14: error: expected '=', ',', ';', 'asm' or '__attribute__' before ':' token
+ class Stream : public Print
+              ^
+In file included from ../mpu9255.c:10:0:
+D:\My Documents\Programming\arduino\arduino-1.6.5-r5\hardware\arduino\avr\libraries\Wire/Wire.h:30:1: error: unknown type name 'class'
+ class TwoWire : public Stream
+ ^
+D:\My Documents\Programming\arduino\arduino-1.6.5-r5\hardware\arduino\avr\libraries\Wire/Wire.h:30:15: error: expected '=', ',', ';', 'asm' or '__attribute__' before ':' token
+ class TwoWire : public Stream
+               ^
+D:\My Documents\Programming\arduino\arduino-1.6.5-r5\hardware\arduino\avr\libraries\Wire/Wire.h:77:1: error: unknown type name 'TwoWire'
+ extern TwoWire Wire;
+ ^
+make: *** [mpu9255.c.o] Error 1
+15:41:12 **** Incremental Build of configuration Release for project steve_arduino ****
+make all 
+Building file: ../mpu9255.c
+Starting C compile
+"D:\My Documents\Programming\arduino\arduino-1.6.5-r5\hardware\tools\avr/bin/avr-gcc" -c -g -Os -ffunction-sections -fdata-sections -MMD -mmcu=atmega328p -DF_CPU=16000000L -DARDUINO=10605 -DARDUINO_AVR_UNO -DARDUINO_ARCH_AVR     -I"D:\My Documents\Programming\arduino\arduino-1.6.5-r5\hardware\arduino\avr\cores\arduino" -I"D:\My Documents\Programming\arduino\arduino-1.6.5-r5\hardware\arduino\avr\variants\standard" -I"D:\My Documents\Programming\arduino\arduino-1.6.5-r5\hardware\arduino\avr\libraries\Wire" -I"D:\My Documents\Programming\arduino\arduino-1.6.5-r5\hardware\arduino\avr\libraries\Wire\utility" -MMD -MP -MF"mpu9255.c.d" -MT"mpu9255.c.o" -D__IN_ECLIPSE__=1 "../mpu9255.c"  -o  "mpu9255.c.o"   -Wall
+In file included from D:\My Documents\Programming\arduino\arduino-1.6.5-r5\hardware\arduino\avr\cores\arduino/Print.h:27:0,
+                 from D:\My Documents\Programming\arduino\arduino-1.6.5-r5\hardware\arduino\avr\cores\arduino/Stream.h:26,
+                 from D:\My Documents\Programming\arduino\arduino-1.6.5-r5\hardware\arduino\avr\libraries\Wire/Wire.h:26,
+                 from ../mpu9255.c:10:
+D:\My Documents\Programming\arduino\arduino-1.6.5-r5\hardware\arduino\avr\cores\arduino/Printable.h:25:1: error: unknown type name 'class'
+ class Print;
+ ^
+D:\My Documents\Programming\arduino\arduino-1.6.5-r5\hardware\arduino\avr\cores\arduino/Printable.h:33:1: error: unknown type name 'class'
+ class Printable
+ ^
+D:\My Documents\Programming\arduino\arduino-1.6.5-r5\hardware\arduino\avr\cores\arduino/Printable.h:34:1: error: expected '=', ',', ';', 'asm' or '__attribute__' before '{' token
+ {
+ ^
+In file included from D:\My Documents\Programming\arduino\arduino-1.6.5-r5\hardware\arduino\avr\cores\arduino/Stream.h:26:0,
+                 from D:\My Documents\Programming\arduino\arduino-1.6.5-r5\hardware\arduino\avr\libraries\Wire/Wire.h:26,
+                 from ../mpu9255.c:10:
+D:\My Documents\Programming\arduino\arduino-1.6.5-r5\hardware\arduino\avr\cores\arduino/Print.h:34:1: error: unknown type name 'class'
+ class Print
+ ^
+D:\My Documents\Programming\arduino\arduino-1.6.5-r5\hardware\arduino\avr\cores\arduino/Print.h:35:1: error: expected '=', ',', ';', 'asm' or '__attribute__' before '{' token
+ {
+ ^
+In file included from D:\My Documents\Programming\arduino\arduino-1.6.5-r5\hardware\arduino\avr\libraries\Wire/Wire.h:26:0,
+                 from ../mpu9255.c:10:
+D:\My Documents\Programming\arduino\arduino-1.6.5-r5\hardware\arduino\avr\cores\arduino/Stream.h:38:1: error: unknown type name 'class'
+ class Stream : public Print
+ ^
+D:\My Documents\Programming\arduino\arduino-1.6.5-r5\hardware\arduino\avr\cores\arduino/Stream.h:38:14: error: expected '=', ',', ';', 'asm' or '__attribute__' before ':' token
+ class Stream : public Print
+              ^
+In file included from ../mpu9255.c:10:0:
+D:\My Documents\Programming\arduino\arduino-1.6.5-r5\hardware\arduino\avr\libraries\Wire/Wire.h:30:1: error: unknown type name 'class'
+ class TwoWire : public Stream
+ ^
+D:\My Documents\Programming\arduino\arduino-1.6.5-r5\hardware\arduino\avr\libraries\Wire/Wire.h:30:15: error: expected '=', ',', ';', 'asm' or '__attribute__' before ':' token
+ class TwoWire : public Stream
+               ^
+D:\My Documents\Programming\arduino\arduino-1.6.5-r5\hardware\arduino\avr\libraries\Wire/Wire.h:77:1: error: unknown type name 'TwoWire'
+ extern TwoWire Wire;
+ ^
+make: *** [mpu9255.c.o] Error 1
+15:41:24 **** Incremental Build of configuration Release for project steve_arduino ****
+make all 
+Building file: ../mpu9255.c
+Starting C compile
+"D:\My Documents\Programming\arduino\arduino-1.6.5-r5\hardware\tools\avr/bin/avr-gcc" -c -g -Os -ffunction-sections -fdata-sections -MMD -mmcu=atmega328p -DF_CPU=16000000L -DARDUINO=10605 -DARDUINO_AVR_UNO -DARDUINO_ARCH_AVR     -I"D:\My Documents\Programming\arduino\arduino-1.6.5-r5\hardware\arduino\avr\cores\arduino" -I"D:\My Documents\Programming\arduino\arduino-1.6.5-r5\hardware\arduino\avr\variants\standard" -I"D:\My Documents\Programming\arduino\arduino-1.6.5-r5\hardware\arduino\avr\libraries\Wire" -I"D:\My Documents\Programming\arduino\arduino-1.6.5-r5\hardware\arduino\avr\libraries\Wire\utility" -MMD -MP -MF"mpu9255.c.d" -MT"mpu9255.c.o" -D__IN_ECLIPSE__=1 "../mpu9255.c"  -o  "mpu9255.c.o"   -Wall
+In file included from D:\My Documents\Programming\arduino\arduino-1.6.5-r5\hardware\arduino\avr\cores\arduino/Print.h:27:0,
+                 from D:\My Documents\Programming\arduino\arduino-1.6.5-r5\hardware\arduino\avr\cores\arduino/Stream.h:26,
+                 from D:\My Documents\Programming\arduino\arduino-1.6.5-r5\hardware\arduino\avr\libraries\Wire/Wire.h:26,
+                 from ../mpu9255.c:12:
+D:\My Documents\Programming\arduino\arduino-1.6.5-r5\hardware\arduino\avr\cores\arduino/Printable.h:25:1: error: unknown type name 'class'
+ class Print;
+ ^
+D:\My Documents\Programming\arduino\arduino-1.6.5-r5\hardware\arduino\avr\cores\arduino/Printable.h:33:1: error: unknown type name 'class'
+ class Printable
+ ^
+D:\My Documents\Programming\arduino\arduino-1.6.5-r5\hardware\arduino\avr\cores\arduino/Printable.h:34:1: error: expected '=', ',', ';', 'asm' or '__attribute__' before '{' token
+ {
+ ^
+In file included from D:\My Documents\Programming\arduino\arduino-1.6.5-r5\hardware\arduino\avr\cores\arduino/Stream.h:26:0,
+                 from D:\My Documents\Programming\arduino\arduino-1.6.5-r5\hardware\arduino\avr\libraries\Wire/Wire.h:26,
+                 from ../mpu9255.c:12:
+D:\My Documents\Programming\arduino\arduino-1.6.5-r5\hardware\arduino\avr\cores\arduino/Print.h:34:1: error: unknown type name 'class'
+ class Print
+ ^
+D:\My Documents\Programming\arduino\arduino-1.6.5-r5\hardware\arduino\avr\cores\arduino/Print.h:35:1: error: expected '=', ',', ';', 'asm' or '__attribute__' before '{' token
+ {
+ ^
+In file included from D:\My Documents\Programming\arduino\arduino-1.6.5-r5\hardware\arduino\avr\libraries\Wire/Wire.h:26:0,
+                 from ../mpu9255.c:12:
+D:\My Documents\Programming\arduino\arduino-1.6.5-r5\hardware\arduino\avr\cores\arduino/Stream.h:38:1: error: unknown type name 'class'
+ class Stream : public Print
+ ^
+D:\My Documents\Programming\arduino\arduino-1.6.5-r5\hardware\arduino\avr\cores\arduino/Stream.h:38:14: error: expected '=', ',', ';', 'asm' or '__attribute__' before ':' token
+ class Stream : public Print
+              ^
+In file included from ../mpu9255.c:12:0:
+D:\My Documents\Programming\arduino\arduino-1.6.5-r5\hardware\arduino\avr\libraries\Wire/Wire.h:30:1: error: unknown type name 'class'
+ class TwoWire : public Stream
+ ^
+D:\My Documents\Programming\arduino\arduino-1.6.5-r5\hardware\arduino\avr\libraries\Wire/Wire.h:30:15: error: expected '=', ',', ';', 'asm' or '__attribute__' before ':' token
+ class TwoWire : public Stream
+               ^
+D:\My Documents\Programming\arduino\arduino-1.6.5-r5\hardware\arduino\avr\libraries\Wire/Wire.h:77:1: error: unknown type name 'TwoWire'
+ extern TwoWire Wire;
+ ^
+make: *** [mpu9255.c.o] Error 1
+15:42:07 **** Incremental Build of configuration Release for project steve_arduino ****
+make all 
+Building file: ../mpu9255.c
+Starting C compile
+"D:\My Documents\Programming\arduino\arduino-1.6.5-r5\hardware\tools\avr/bin/avr-gcc" -c -g -Os -ffunction-sections -fdata-sections -MMD -mmcu=atmega328p -DF_CPU=16000000L -DARDUINO=10605 -DARDUINO_AVR_UNO -DARDUINO_ARCH_AVR     -I"D:\My Documents\Programming\arduino\arduino-1.6.5-r5\hardware\arduino\avr\cores\arduino" -I"D:\My Documents\Programming\arduino\arduino-1.6.5-r5\hardware\arduino\avr\variants\standard" -I"D:\My Documents\Programming\arduino\arduino-1.6.5-r5\hardware\arduino\avr\libraries\Wire" -I"D:\My Documents\Programming\arduino\arduino-1.6.5-r5\hardware\arduino\avr\libraries\Wire\utility" -I"D:\My Documents\Programming\arduino\arduino-1.6.5-r5\hardware\arduino\avr\libraries\EEPROM" -MMD -MP -MF"mpu9255.c.d" -MT"mpu9255.c.o" -D__IN_ECLIPSE__=1 "../mpu9255.c"  -o  "mpu9255.c.o"   -Wall
+In file included from D:\My Documents\Programming\arduino\arduino-1.6.5-r5\hardware\arduino\avr\cores\arduino/Print.h:27:0,
+                 from D:\My Documents\Programming\arduino\arduino-1.6.5-r5\hardware\arduino\avr\cores\arduino/Stream.h:26,
+                 from D:\My Documents\Programming\arduino\arduino-1.6.5-r5\hardware\arduino\avr\libraries\Wire/Wire.h:26,
+                 from ../mpu9255.c:12:
+D:\My Documents\Programming\arduino\arduino-1.6.5-r5\hardware\arduino\avr\cores\arduino/Printable.h:25:1: error: unknown type name 'class'
+ class Print;
+ ^
+D:\My Documents\Programming\arduino\arduino-1.6.5-r5\hardware\arduino\avr\cores\arduino/Printable.h:33:1: error: unknown type name 'class'
+ class Printable
+ ^
+D:\My Documents\Programming\arduino\arduino-1.6.5-r5\hardware\arduino\avr\cores\arduino/Printable.h:34:1: error: expected '=', ',', ';', 'asm' or '__attribute__' before '{' token
+ {
+ ^
+In file included from D:\My Documents\Programming\arduino\arduino-1.6.5-r5\hardware\arduino\avr\cores\arduino/Stream.h:26:0,
+                 from D:\My Documents\Programming\arduino\arduino-1.6.5-r5\hardware\arduino\avr\libraries\Wire/Wire.h:26,
+                 from ../mpu9255.c:12:
+D:\My Documents\Programming\arduino\arduino-1.6.5-r5\hardware\arduino\avr\cores\arduino/Print.h:34:1: error: unknown type name 'class'
+ class Print
+ ^
+D:\My Documents\Programming\arduino\arduino-1.6.5-r5\hardware\arduino\avr\cores\arduino/Print.h:35:1: error: expected '=', ',', ';', 'asm' or '__attribute__' before '{' token
+ {
+ ^
+In file included from D:\My Documents\Programming\arduino\arduino-1.6.5-r5\hardware\arduino\avr\libraries\Wire/Wire.h:26:0,
+                 from ../mpu9255.c:12:
+D:\My Documents\Programming\arduino\arduino-1.6.5-r5\hardware\arduino\avr\cores\arduino/Stream.h:38:1: error: unknown type name 'class'
+ class Stream : public Print
+ ^
+D:\My Documents\Programming\arduino\arduino-1.6.5-r5\hardware\arduino\avr\cores\arduino/Stream.h:38:14: error: expected '=', ',', ';', 'asm' or '__attribute__' before ':' token
+ class Stream : public Print
+              ^
+In file included from ../mpu9255.c:12:0:
+D:\My Documents\Programming\arduino\arduino-1.6.5-r5\hardware\arduino\avr\libraries\Wire/Wire.h:30:1: error: unknown type name 'class'
+ class TwoWire : public Stream
+ ^
+D:\My Documents\Programming\arduino\arduino-1.6.5-r5\hardware\arduino\avr\libraries\Wire/Wire.h:30:15: error: expected '=', ',', ';', 'asm' or '__attribute__' before ':' token
+ class TwoWire : public Stream
+               ^
+D:\My Documents\Programming\arduino\arduino-1.6.5-r5\hardware\arduino\avr\libraries\Wire/Wire.h:77:1: error: unknown type name 'TwoWire'
+ extern TwoWire Wire;
+ ^
+make: *** [mpu9255.c.o] Error 1

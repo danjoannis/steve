@@ -1,0 +1,49 @@
+15:42:07 **** Incremental Build of configuration Release for project steve_arduino ****
+make all 
+Building file: ../mpu9255.c
+Starting C compile
+"D:\My Documents\Programming\arduino\arduino-1.6.5-r5\hardware\tools\avr/bin/avr-gcc" -c -g -Os -ffunction-sections -fdata-sections -MMD -mmcu=atmega328p -DF_CPU=16000000L -DARDUINO=10605 -DARDUINO_AVR_UNO -DARDUINO_ARCH_AVR     -I"D:\My Documents\Programming\arduino\arduino-1.6.5-r5\hardware\arduino\avr\cores\arduino" -I"D:\My Documents\Programming\arduino\arduino-1.6.5-r5\hardware\arduino\avr\variants\standard" -I"D:\My Documents\Programming\arduino\arduino-1.6.5-r5\hardware\arduino\avr\libraries\Wire" -I"D:\My Documents\Programming\arduino\arduino-1.6.5-r5\hardware\arduino\avr\libraries\Wire\utility" -I"D:\My Documents\Programming\arduino\arduino-1.6.5-r5\hardware\arduino\avr\libraries\EEPROM" -MMD -MP -MF"mpu9255.c.d" -MT"mpu9255.c.o" -D__IN_ECLIPSE__=1 "../mpu9255.c"  -o  "mpu9255.c.o"   -Wall
+In file included from D:\My Documents\Programming\arduino\arduino-1.6.5-r5\hardware\arduino\avr\cores\arduino/Print.h:27:0,
+                 from D:\My Documents\Programming\arduino\arduino-1.6.5-r5\hardware\arduino\avr\cores\arduino/Stream.h:26,
+                 from D:\My Documents\Programming\arduino\arduino-1.6.5-r5\hardware\arduino\avr\libraries\Wire/Wire.h:26,
+                 from ../mpu9255.c:12:
+D:\My Documents\Programming\arduino\arduino-1.6.5-r5\hardware\arduino\avr\cores\arduino/Printable.h:25:1: error: unknown type name 'class'
+ class Print;
+ ^
+D:\My Documents\Programming\arduino\arduino-1.6.5-r5\hardware\arduino\avr\cores\arduino/Printable.h:33:1: error: unknown type name 'class'
+ class Printable
+ ^
+D:\My Documents\Programming\arduino\arduino-1.6.5-r5\hardware\arduino\avr\cores\arduino/Printable.h:34:1: error: expected '=', ',', ';', 'asm' or '__attribute__' before '{' token
+ {
+ ^
+In file included from D:\My Documents\Programming\arduino\arduino-1.6.5-r5\hardware\arduino\avr\cores\arduino/Stream.h:26:0,
+                 from D:\My Documents\Programming\arduino\arduino-1.6.5-r5\hardware\arduino\avr\libraries\Wire/Wire.h:26,
+                 from ../mpu9255.c:12:
+D:\My Documents\Programming\arduino\arduino-1.6.5-r5\hardware\arduino\avr\cores\arduino/Print.h:34:1: error: unknown type name 'class'
+ class Print
+ ^
+D:\My Documents\Programming\arduino\arduino-1.6.5-r5\hardware\arduino\avr\cores\arduino/Print.h:35:1: error: expected '=', ',', ';', 'asm' or '__attribute__' before '{' token
+ {
+ ^
+In file included from D:\My Documents\Programming\arduino\arduino-1.6.5-r5\hardware\arduino\avr\libraries\Wire/Wire.h:26:0,
+                 from ../mpu9255.c:12:
+D:\My Documents\Programming\arduino\arduino-1.6.5-r5\hardware\arduino\avr\cores\arduino/Stream.h:38:1: error: unknown type name 'class'
+ class Stream : public Print
+ ^
+D:\My Documents\Programming\arduino\arduino-1.6.5-r5\hardware\arduino\avr\cores\arduino/Stream.h:38:14: error: expected '=', ',', ';', 'asm' or '__attribute__' before ':' token
+ class Stream : public Print
+              ^
+In file included from ../mpu9255.c:12:0:
+D:\My Documents\Programming\arduino\arduino-1.6.5-r5\hardware\arduino\avr\libraries\Wire/Wire.h:30:1: error: unknown type name 'class'
+ class TwoWire : public Stream
+ ^
+D:\My Documents\Programming\arduino\arduino-1.6.5-r5\hardware\arduino\avr\libraries\Wire/Wire.h:30:15: error: expected '=', ',', ';', 'asm' or '__attribute__' before ':' token
+ class TwoWire : public Stream
+               ^
+D:\My Documents\Programming\arduino\arduino-1.6.5-r5\hardware\arduino\avr\libraries\Wire/Wire.h:77:1: error: unknown type name 'TwoWire'
+ extern TwoWire Wire;
+ ^
+make: *** [mpu9255.c.o] Error 1
+
+15:42:07 Build Finished (took 212ms)
+
