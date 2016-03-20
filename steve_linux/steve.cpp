@@ -17,7 +17,7 @@ int main()
 
 	cout << "Connecting to Arduino: ";
 
-	if (open_port() == 0)
+	if (serial::open_port() == 0)
 	{
 		cout << "OK!" << endl;
 	}
