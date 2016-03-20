@@ -1,0 +1,104 @@
+/*
+ * mpu9255.c
+ *
+ *  Created on: Nov 24, 2015
+ *      Author: Daniel
+ */
+
+#include "mpu9255.h"
+#include "i2c.h"
+
+/* Read one of the accelerometer or gyro axis registers */
+int Read_Acc_Gyro(unsigned char axis)
+{
+  int Data;
+
+  /* Select the required register */
+  i2c_start((I2CACCGYROADD << 1) + I2C_WRITE);
+  i2c_write(axis);
+  i2c_stop();
+
+  /* Request the high and low bytes for the required axis */
+  i2c_rep_start((I2CACCGYROADD << 1 ) + I2C_READ);
+  Data = i2c_readAck() << 8;
+  Data = Data | i2c_readNak();
+  i2c_stop();
+
+  return Data;
+}
+
+/* Initialises the accelerometer and gyro to one of the sensitivity
+   ranges and puts the I2C bus into pass-through mode */
+void Initalise_AccelGyro(unsigned char Accel_Range,unsigned char Gyro_Range)
+{
+  /* Take the MPU9150 out of sleep */
+  i2c_start((I2CACCGYROADD << 1) + I2C_WRITE);
+  i2c_write(PWR_MGMT_1);
+  i2c_write(0);
+  i2c_stop();
+
+  /* Set the sensitivity of the module */
+  i2c_start((I2CACCGYROADD << 1) + I2C_WRITE);
+  i2c_write(ACCEL_CONFIG);
+  i2c_write(Accel_Range << 3);
+  i2c_stop();
+
+  /* Set the sensitivity of the module */
+  i2c_start((I2CACCGYROADD << 1) + I2C_WRITE);
+  i2c_write(GYRO_CONFIG);
+  i2c_write(Gyro_Range << 3);
+  i2c_stop();
+
+  /* Put the I2C bus into pass-through mode so that the aux I2C interface
+     that has the compass connected to it can be accessed */
+  i2c_start((I2CACCGYROADD << 1) + I2C_WRITE);
+  i2c_write(0x6A);
+  i2c_write(0x00);
+  i2c_stop();
+
+  i2c_start((I2CACCGYROADD << 1) + I2C_WRITE);
+  i2c_write(0x37);
+  i2c_write(0x02);
+  i2c_stop();
+}
+
+/* Read one of the compass axis */
+int Read_Compass(unsigned char axis)
+{
+  int Data;
+
+  /* Select the required axis register */
+  i2c_start((I2CCOMPADD << 1) + I2C_WRITE);
+  i2c_write(axis);
+  i2c_stop();
+
+  /* Request the low and high bytes for the required axis */
+  i2c_rep_start((I2CCOMPADD << 1) + I2C_READ);
+  Data = i2c_readAck();
+  Data = (Data<<5) | (i2c_readNak() >>8);
+  i2c_stop();
+
+  return Data;
+}
+
+/* Trigger a single shot compass reading of all three axis */
+void Trigger_Compass(void)
+{
+
+  /* Trigger a measurement */
+  i2c_start((I2CCOMPADD << 1) + I2C_WRITE);
+  i2c_write(0x0A);
+  i2c_write(0x01);
+  i2c_stop();
+
+  /* Wait for the measurement to complete */
+  do
+  {
+    i2c_start((I2CCOMPADD << 1) + I2C_WRITE);
+    i2c_write(COMP_STATUS);
+    i2c_stop();
+
+    i2c_rep_start((I2CCOMPADD << 1) + I2C_READ);
+    i2c_readNak();
+  }while(!i2c_readNak());
+}

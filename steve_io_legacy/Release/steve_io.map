@@ -1,0 +1,1297 @@
+Archive member included because of file (symbol)
+
+D:\My Documents\GitHub\steve\steve_io\libArduinoCore.a(wiring_analog.c.o)
+                              ./motors.o (analogWrite)
+D:\My Documents\GitHub\steve\steve_io\libArduinoCore.a(wiring_digital.c.o)
+                              D:\My Documents\GitHub\steve\steve_io\libArduinoCore.a(wiring_analog.c.o) (pinMode)
+c:/winavr-20100110/bin/../lib/gcc/avr/4.3.3/../../../../avr/lib/avr5\libm.a(addsf3.o)
+                              ./motors.o (__subsf3)
+c:/winavr-20100110/bin/../lib/gcc/avr/4.3.3/../../../../avr/lib/avr5\libm.a(addsf3x.o)
+                              c:/winavr-20100110/bin/../lib/gcc/avr/4.3.3/../../../../avr/lib/avr5\libm.a(addsf3.o) (__addsf3x)
+c:/winavr-20100110/bin/../lib/gcc/avr/4.3.3/../../../../avr/lib/avr5\libm.a(cmpsf2.o)
+                              ./motors.o (__ltsf2)
+c:/winavr-20100110/bin/../lib/gcc/avr/4.3.3/../../../../avr/lib/avr5\libm.a(divsf3.o)
+                              ./motors.o (__divsf3)
+c:/winavr-20100110/bin/../lib/gcc/avr/4.3.3/../../../../avr/lib/avr5\libm.a(divsf3x.o)
+                              c:/winavr-20100110/bin/../lib/gcc/avr/4.3.3/../../../../avr/lib/avr5\libm.a(divsf3.o) (__divsf3x)
+c:/winavr-20100110/bin/../lib/gcc/avr/4.3.3/../../../../avr/lib/avr5\libm.a(fixunssfsi.o)
+                              ./motors.o (__fixunssfsi)
+c:/winavr-20100110/bin/../lib/gcc/avr/4.3.3/../../../../avr/lib/avr5\libm.a(floatsisf.o)
+                              ./commands.o (__floatunsisf)
+c:/winavr-20100110/bin/../lib/gcc/avr/4.3.3/../../../../avr/lib/avr5\libm.a(fp_cmp.o)
+                              c:/winavr-20100110/bin/../lib/gcc/avr/4.3.3/../../../../avr/lib/avr5\libm.a(cmpsf2.o) (__fp_cmp)
+c:/winavr-20100110/bin/../lib/gcc/avr/4.3.3/../../../../avr/lib/avr5\libm.a(fp_inf.o)
+                              c:/winavr-20100110/bin/../lib/gcc/avr/4.3.3/../../../../avr/lib/avr5\libm.a(addsf3x.o) (__fp_inf)
+c:/winavr-20100110/bin/../lib/gcc/avr/4.3.3/../../../../avr/lib/avr5\libm.a(fp_nan.o)
+                              c:/winavr-20100110/bin/../lib/gcc/avr/4.3.3/../../../../avr/lib/avr5\libm.a(addsf3x.o) (__fp_nan)
+c:/winavr-20100110/bin/../lib/gcc/avr/4.3.3/../../../../avr/lib/avr5\libm.a(fp_pscA.o)
+                              c:/winavr-20100110/bin/../lib/gcc/avr/4.3.3/../../../../avr/lib/avr5\libm.a(addsf3x.o) (__fp_pscA)
+c:/winavr-20100110/bin/../lib/gcc/avr/4.3.3/../../../../avr/lib/avr5\libm.a(fp_pscB.o)
+                              c:/winavr-20100110/bin/../lib/gcc/avr/4.3.3/../../../../avr/lib/avr5\libm.a(addsf3x.o) (__fp_pscB)
+c:/winavr-20100110/bin/../lib/gcc/avr/4.3.3/../../../../avr/lib/avr5\libm.a(fp_round.o)
+                              c:/winavr-20100110/bin/../lib/gcc/avr/4.3.3/../../../../avr/lib/avr5\libm.a(addsf3.o) (__fp_round)
+c:/winavr-20100110/bin/../lib/gcc/avr/4.3.3/../../../../avr/lib/avr5\libm.a(fp_split3.o)
+                              c:/winavr-20100110/bin/../lib/gcc/avr/4.3.3/../../../../avr/lib/avr5\libm.a(addsf3x.o) (__fp_split3)
+c:/winavr-20100110/bin/../lib/gcc/avr/4.3.3/../../../../avr/lib/avr5\libm.a(fp_zero.o)
+                              c:/winavr-20100110/bin/../lib/gcc/avr/4.3.3/../../../../avr/lib/avr5\libm.a(addsf3x.o) (__fp_zero)
+c:/winavr-20100110/bin/../lib/gcc/avr/4.3.3/../../../../avr/lib/avr5\libm.a(gesf2.o)
+                              ./motors.o (__gtsf2)
+c:/winavr-20100110/bin/../lib/gcc/avr/4.3.3/../../../../avr/lib/avr5\libm.a(mulsf3.o)
+                              ./motors.o (__mulsf3)
+c:/winavr-20100110/bin/../lib/gcc/avr/4.3.3/../../../../avr/lib/avr5\libm.a(mulsf3x.o)
+                              c:/winavr-20100110/bin/../lib/gcc/avr/4.3.3/../../../../avr/lib/avr5\libm.a(mulsf3.o) (__mulsf3x)
+c:/winavr-20100110/bin/../lib/gcc/avr/4.3.3/avr5\libgcc.a(_udivmodhi4.o)
+                              ./commands.o (__udivmodhi4)
+c:/winavr-20100110/bin/../lib/gcc/avr/4.3.3/avr5\libgcc.a(_divmodhi4.o)
+                              ./util.o (__divmodhi4)
+c:/winavr-20100110/bin/../lib/gcc/avr/4.3.3/avr5\libgcc.a(_exit.o)
+                              c:/winavr-20100110/bin/../lib/gcc/avr/4.3.3/../../../../avr/lib/avr5/crtm328p.o (exit)
+c:/winavr-20100110/bin/../lib/gcc/avr/4.3.3/avr5\libgcc.a(_copy_data.o)
+                              ./commands.o (__do_copy_data)
+c:/winavr-20100110/bin/../lib/gcc/avr/4.3.3/avr5\libgcc.a(_clear_bss.o)
+                              ./commands.o (__do_clear_bss)
+
+Allocating common symbols
+Common symbol       size              file
+
+data_count          0x1               ./commands.o
+_whoami             0x1               ./mpu9250.o
+command_in          0x8               ./commands.o
+data_in             0x8               ./commands.o
+command_ready       0x1               ./commands.o
+
+Discarded input sections
+
+ .data          0x00000000        0x0 c:/winavr-20100110/bin/../lib/gcc/avr/4.3.3/../../../../avr/lib/avr5/crtm328p.o
+ .bss           0x00000000        0x0 c:/winavr-20100110/bin/../lib/gcc/avr/4.3.3/../../../../avr/lib/avr5/crtm328p.o
+ .text          0x00000000        0x0 ./adc.o
+ .data          0x00000000        0x0 ./adc.o
+ .bss           0x00000000        0x0 ./adc.o
+ .text.adc_read
+                0x00000000        0x0 ./adc.o
+ .text          0x00000000        0x0 ./commands.o
+ .bss           0x00000000        0x0 ./commands.o
+ .text          0x00000000        0x0 ./i2c.o
+ .data          0x00000000        0x0 ./i2c.o
+ .bss           0x00000000        0x0 ./i2c.o
+ .text.i2c_start_wait
+                0x00000000        0x0 ./i2c.o
+ .text          0x00000000        0x0 ./main.o
+ .bss           0x00000000        0x0 ./main.o
+ .text          0x00000000        0x0 ./motors.o
+ .data          0x00000000        0x0 ./motors.o
+ .bss           0x00000000        0x0 ./motors.o
+ .text.motors_turn_tank
+                0x00000000        0x0 ./motors.o
+ .text.motors_drive_car
+                0x00000000        0x0 ./motors.o
+ .text.motors_go_car
+                0x00000000        0x0 ./motors.o
+ .text.motors_turn_car
+                0x00000000        0x0 ./motors.o
+ .text.motors_drive_tank
+                0x00000000        0x0 ./motors.o
+ .text          0x00000000        0x0 ./mpu9250.o
+ .data          0x00000000        0x0 ./mpu9250.o
+ .bss           0x00000000        0x0 ./mpu9250.o
+ .text.getAuxVDDIOLevel
+                0x00000000        0x0 ./mpu9250.o
+ .text.setAuxVDDIOLevel
+                0x00000000        0x0 ./mpu9250.o
+ .text.getDHPFMode
+                0x00000000        0x0 ./mpu9250.o
+ .text.setDHPFMode
+                0x00000000        0x0 ./mpu9250.o
+ .text.getFreefallDetectionThreshold
+                0x00000000        0x0 ./mpu9250.o
+ .text.setFreefallDetectionThreshold
+                0x00000000        0x0 ./mpu9250.o
+ .text.getFreefallDetectionDuration
+                0x00000000        0x0 ./mpu9250.o
+ .text.setFreefallDetectionDuration
+                0x00000000        0x0 ./mpu9250.o
+ .text.getMotionDetectionThreshold
+                0x00000000        0x0 ./mpu9250.o
+ .text.setMotionDetectionThreshold
+                0x00000000        0x0 ./mpu9250.o
+ .text.getMotionDetectionDuration
+                0x00000000        0x0 ./mpu9250.o
+ .text.setMotionDetectionDuration
+                0x00000000        0x0 ./mpu9250.o
+ .text.getZeroMotionDetectionThreshold
+                0x00000000        0x0 ./mpu9250.o
+ .text.setZeroMotionDetectionThreshold
+                0x00000000        0x0 ./mpu9250.o
+ .text.getZeroMotionDetectionDuration
+                0x00000000        0x0 ./mpu9250.o
+ .text.setZeroMotionDetectionDuration
+                0x00000000        0x0 ./mpu9250.o
+ .text.getClockOutputEnabled
+                0x00000000        0x0 ./mpu9250.o
+ .text.setClockOutputEnabled
+                0x00000000        0x0 ./mpu9250.o
+ .text.getIntFreefallEnabled
+                0x00000000        0x0 ./mpu9250.o
+ .text.setIntFreefallEnabled
+                0x00000000        0x0 ./mpu9250.o
+ .text.getIntMotionEnabled
+                0x00000000        0x0 ./mpu9250.o
+ .text.setIntMotionEnabled
+                0x00000000        0x0 ./mpu9250.o
+ .text.getIntZeroMotionEnabled
+                0x00000000        0x0 ./mpu9250.o
+ .text.setIntZeroMotionEnabled
+                0x00000000        0x0 ./mpu9250.o
+ .text.getIntDataReadyEnabled
+                0x00000000        0x0 ./mpu9250.o
+ .text.setIntDataReadyEnabled
+                0x00000000        0x0 ./mpu9250.o
+ .text.getIntFreefallStatus
+                0x00000000        0x0 ./mpu9250.o
+ .text.getIntMotionStatus
+                0x00000000        0x0 ./mpu9250.o
+ .text.getIntZeroMotionStatus
+                0x00000000        0x0 ./mpu9250.o
+ .text.getIntFIFOBufferOverflowStatus
+                0x00000000        0x0 ./mpu9250.o
+ .text.getIntI2CMasterStatus
+                0x00000000        0x0 ./mpu9250.o
+ .text.getIntDataReadyStatus
+                0x00000000        0x0 ./mpu9250.o
+ .text.getXNegMotionDetected
+                0x00000000        0x0 ./mpu9250.o
+ .text.getXPosMotionDetected
+                0x00000000        0x0 ./mpu9250.o
+ .text.getYNegMotionDetected
+                0x00000000        0x0 ./mpu9250.o
+ .text.getYPosMotionDetected
+                0x00000000        0x0 ./mpu9250.o
+ .text.getZNegMotionDetected
+                0x00000000        0x0 ./mpu9250.o
+ .text.getZPosMotionDetected
+                0x00000000        0x0 ./mpu9250.o
+ .text.getZeroMotionDetected
+                0x00000000        0x0 ./mpu9250.o
+ .text.getAccelerometerPowerOnDelay
+                0x00000000        0x0 ./mpu9250.o
+ .text.setAccelerometerPowerOnDelay
+                0x00000000        0x0 ./mpu9250.o
+ .text.getFreefallDetectionCounterDecrement
+                0x00000000        0x0 ./mpu9250.o
+ .text.setFreefallDetectionCounterDecrement
+                0x00000000        0x0 ./mpu9250.o
+ .text.getMotionDetectionCounterDecrement
+                0x00000000        0x0 ./mpu9250.o
+ .text.setMotionDetectionCounterDecrement
+                0x00000000        0x0 ./mpu9250.o
+ .text.getWakeFrequency
+                0x00000000        0x0 ./mpu9250.o
+ .text.setWakeFrequency
+                0x00000000        0x0 ./mpu9250.o
+ .text.getStandbyXAccelEnabled
+                0x00000000        0x0 ./mpu9250.o
+ .text.setStandbyXAccelEnabled
+                0x00000000        0x0 ./mpu9250.o
+ .text.getStandbyYAccelEnabled
+                0x00000000        0x0 ./mpu9250.o
+ .text.setStandbyYAccelEnabled
+                0x00000000        0x0 ./mpu9250.o
+ .text.getStandbyZAccelEnabled
+                0x00000000        0x0 ./mpu9250.o
+ .text.setStandbyZAccelEnabled
+                0x00000000        0x0 ./mpu9250.o
+ .text.getStandbyXGyroEnabled
+                0x00000000        0x0 ./mpu9250.o
+ .text.setStandbyXGyroEnabled
+                0x00000000        0x0 ./mpu9250.o
+ .text.getStandbyYGyroEnabled
+                0x00000000        0x0 ./mpu9250.o
+ .text.setStandbyYGyroEnabled
+                0x00000000        0x0 ./mpu9250.o
+ .text.getStandbyZGyroEnabled
+                0x00000000        0x0 ./mpu9250.o
+ .text.setStandbyZGyroEnabled
+                0x00000000        0x0 ./mpu9250.o
+ .text.getOTPBankValid
+                0x00000000        0x0 ./mpu9250.o
+ .text.setOTPBankValid
+                0x00000000        0x0 ./mpu9250.o
+ .text.getXFineGain
+                0x00000000        0x0 ./mpu9250.o
+ .text.setXFineGain
+                0x00000000        0x0 ./mpu9250.o
+ .text.getYFineGain
+                0x00000000        0x0 ./mpu9250.o
+ .text.setYFineGain
+                0x00000000        0x0 ./mpu9250.o
+ .text.getZFineGain
+                0x00000000        0x0 ./mpu9250.o
+ .text.setZFineGain
+                0x00000000        0x0 ./mpu9250.o
+ .text.getXGyroOffsetUser
+                0x00000000        0x0 ./mpu9250.o
+ .text.setXGyroOffsetUser
+                0x00000000        0x0 ./mpu9250.o
+ .text.getYGyroOffsetUser
+                0x00000000        0x0 ./mpu9250.o
+ .text.setYGyroOffsetUser
+                0x00000000        0x0 ./mpu9250.o
+ .text.getZGyroOffsetUser
+                0x00000000        0x0 ./mpu9250.o
+ .text.setZGyroOffsetUser
+                0x00000000        0x0 ./mpu9250.o
+ .text.getIntPLLReadyEnabled
+                0x00000000        0x0 ./mpu9250.o
+ .text.setIntPLLReadyEnabled
+                0x00000000        0x0 ./mpu9250.o
+ .text.getIntDMPEnabled
+                0x00000000        0x0 ./mpu9250.o
+ .text.setIntDMPEnabled
+                0x00000000        0x0 ./mpu9250.o
+ .text.getDMPInt5Status
+                0x00000000        0x0 ./mpu9250.o
+ .text.getDMPInt4Status
+                0x00000000        0x0 ./mpu9250.o
+ .text.getDMPInt3Status
+                0x00000000        0x0 ./mpu9250.o
+ .text.getDMPInt2Status
+                0x00000000        0x0 ./mpu9250.o
+ .text.getDMPInt1Status
+                0x00000000        0x0 ./mpu9250.o
+ .text.getDMPInt0Status
+                0x00000000        0x0 ./mpu9250.o
+ .text.getIntPLLReadyStatus
+                0x00000000        0x0 ./mpu9250.o
+ .text.getIntDMPStatus
+                0x00000000        0x0 ./mpu9250.o
+ .text.getDMPEnabled
+                0x00000000        0x0 ./mpu9250.o
+ .text.setDMPEnabled
+                0x00000000        0x0 ./mpu9250.o
+ .text.resetDMP
+                0x00000000        0x0 ./mpu9250.o
+ .text.setMemoryBank
+                0x00000000        0x0 ./mpu9250.o
+ .text.setMemoryStartAddress
+                0x00000000        0x0 ./mpu9250.o
+ .text.readMemoryByte
+                0x00000000        0x0 ./mpu9250.o
+ .text.writeMemoryByte
+                0x00000000        0x0 ./mpu9250.o
+ .text.readMemoryBlock
+                0x00000000        0x0 ./mpu9250.o
+ .text.writeMemoryBlock
+                0x00000000        0x0 ./mpu9250.o
+ .text.writeProgMemoryBlock
+                0x00000000        0x0 ./mpu9250.o
+ .text.getDMPConfig1
+                0x00000000        0x0 ./mpu9250.o
+ .text.setDMPConfig1
+                0x00000000        0x0 ./mpu9250.o
+ .text.getDMPConfig2
+                0x00000000        0x0 ./mpu9250.o
+ .text.setDMPConfig2
+                0x00000000        0x0 ./mpu9250.o
+ .text.selectClock
+                0x00000000        0x0 ./mpu9250.o
+ .text.writeMagRegister
+                0x00000000        0x0 ./mpu9250.o
+ .text.writeRegister
+                0x00000000        0x0 ./mpu9250.o
+ .text.disableGyro
+                0x00000000        0x0 ./mpu9250.o
+ .text.enableGyro
+                0x00000000        0x0 ./mpu9250.o
+ .text.disableGyroAxis
+                0x00000000        0x0 ./mpu9250.o
+ .text.enableGyroAxis
+                0x00000000        0x0 ./mpu9250.o
+ .text.disableAccelerometer
+                0x00000000        0x0 ./mpu9250.o
+ .text.enableAccelerometer
+                0x00000000        0x0 ./mpu9250.o
+ .text.disableAccelerometerAxis
+                0x00000000        0x0 ./mpu9250.o
+ .text.enableAccelerometerAxis
+                0x00000000        0x0 ./mpu9250.o
+ .text.writeDMPConfigurationSet
+                0x00000000        0x0 ./mpu9250.o
+ .text.writeProgDMPConfigurationSet
+                0x00000000        0x0 ./mpu9250.o
+ .text.setZGyroOffset
+                0x00000000        0x0 ./mpu9250.o
+ .text.setYGyroOffset
+                0x00000000        0x0 ./mpu9250.o
+ .text.setXGyroOffset
+                0x00000000        0x0 ./mpu9250.o
+ .text.setFIFOByte
+                0x00000000        0x0 ./mpu9250.o
+ .text.setSlaveOutputByte
+                0x00000000        0x0 ./mpu9250.o
+ .text.setIntEnabled
+                0x00000000        0x0 ./mpu9250.o
+ .text.setSlave4OutputByte
+                0x00000000        0x0 ./mpu9250.o
+ .text.setSlave4Register
+                0x00000000        0x0 ./mpu9250.o
+ .text.setSlave4Address
+                0x00000000        0x0 ./mpu9250.o
+ .text.setSlaveRegister
+                0x00000000        0x0 ./mpu9250.o
+ .text.setSlaveAddress
+                0x00000000        0x0 ./mpu9250.o
+ .text.setAccelZSelfTest
+                0x00000000        0x0 ./mpu9250.o
+ .text.setAccelYSelfTest
+                0x00000000        0x0 ./mpu9250.o
+ .text.setAccelXSelfTest
+                0x00000000        0x0 ./mpu9250.o
+ .text.setRate  0x00000000        0x0 ./mpu9250.o
+ .text.writeMaskedRegister
+                0x00000000        0x0 ./mpu9250.o
+ .text.disableTemperature
+                0x00000000        0x0 ./mpu9250.o
+ .text.enableTemperature
+                0x00000000        0x0 ./mpu9250.o
+ .text.setClockSource
+                0x00000000        0x0 ./mpu9250.o
+ .text.setWakeCycleEnabled
+                0x00000000        0x0 ./mpu9250.o
+ .text.setSleepEnabled
+                0x00000000        0x0 ./mpu9250.o
+ .text.reset    0x00000000        0x0 ./mpu9250.o
+ .text.resetSensors
+                0x00000000        0x0 ./mpu9250.o
+ .text.resetI2CMaster
+                0x00000000        0x0 ./mpu9250.o
+ .text.resetFIFO
+                0x00000000        0x0 ./mpu9250.o
+ .text.switchSPIEnabled
+                0x00000000        0x0 ./mpu9250.o
+ .text.setI2CMasterModeEnabled
+                0x00000000        0x0 ./mpu9250.o
+ .text.setFIFOEnabled
+                0x00000000        0x0 ./mpu9250.o
+ .text.resetTemperaturePath
+                0x00000000        0x0 ./mpu9250.o
+ .text.resetAccelerometerPath
+                0x00000000        0x0 ./mpu9250.o
+ .text.resetGyroscopePath
+                0x00000000        0x0 ./mpu9250.o
+ .text.setSlaveDelayEnabled
+                0x00000000        0x0 ./mpu9250.o
+ .text.setExternalShadowDelayEnabled
+                0x00000000        0x0 ./mpu9250.o
+ .text.setIntI2CMasterEnabled
+                0x00000000        0x0 ./mpu9250.o
+ .text.setIntFIFOBufferOverflowEnabled
+                0x00000000        0x0 ./mpu9250.o
+ .text.setI2CBypassEnabled
+                0x00000000        0x0 ./mpu9250.o
+ .text.setFSyncInterruptEnabled
+                0x00000000        0x0 ./mpu9250.o
+ .text.setFSyncInterruptLevel
+                0x00000000        0x0 ./mpu9250.o
+ .text.setInterruptLatchClear
+                0x00000000        0x0 ./mpu9250.o
+ .text.setInterruptLatch
+                0x00000000        0x0 ./mpu9250.o
+ .text.setInterruptDrive
+                0x00000000        0x0 ./mpu9250.o
+ .text.setInterruptMode
+                0x00000000        0x0 ./mpu9250.o
+ .text.setSlave4MasterDelay
+                0x00000000        0x0 ./mpu9250.o
+ .text.setSlave4WriteMode
+                0x00000000        0x0 ./mpu9250.o
+ .text.setSlave4InterruptEnabled
+                0x00000000        0x0 ./mpu9250.o
+ .text.setSlave4Enabled
+                0x00000000        0x0 ./mpu9250.o
+ .text.setSlaveDataLength
+                0x00000000        0x0 ./mpu9250.o
+ .text.setSlaveWordGroupOffset
+                0x00000000        0x0 ./mpu9250.o
+ .text.setSlaveWriteMode
+                0x00000000        0x0 ./mpu9250.o
+ .text.setSlaveWordByteSwap
+                0x00000000        0x0 ./mpu9250.o
+ .text.setSlaveEnabled
+                0x00000000        0x0 ./mpu9250.o
+ .text.setMasterClockSpeed
+                0x00000000        0x0 ./mpu9250.o
+ .text.setSlaveReadWriteTransitionEnabled
+                0x00000000        0x0 ./mpu9250.o
+ .text.setSlave3FIFOEnabled
+                0x00000000        0x0 ./mpu9250.o
+ .text.setWaitForExternalSensorEnabled
+                0x00000000        0x0 ./mpu9250.o
+ .text.setMultiMasterEnabled
+                0x00000000        0x0 ./mpu9250.o
+ .text.setSlave0FIFOEnabled
+                0x00000000        0x0 ./mpu9250.o
+ .text.setSlave1FIFOEnabled
+                0x00000000        0x0 ./mpu9250.o
+ .text.setSlave2FIFOEnabled
+                0x00000000        0x0 ./mpu9250.o
+ .text.setAccelFIFOEnabled
+                0x00000000        0x0 ./mpu9250.o
+ .text.setZGyroFIFOEnabled
+                0x00000000        0x0 ./mpu9250.o
+ .text.setYGyroFIFOEnabled
+                0x00000000        0x0 ./mpu9250.o
+ .text.setXGyroFIFOEnabled
+                0x00000000        0x0 ./mpu9250.o
+ .text.setTempFIFOEnabled
+                0x00000000        0x0 ./mpu9250.o
+ .text.setFullScaleAccelRange
+                0x00000000        0x0 ./mpu9250.o
+ .text.setFullScaleGyroRange
+                0x00000000        0x0 ./mpu9250.o
+ .text.initialize
+                0x00000000        0x0 ./mpu9250.o
+ .text.setDLPFMode
+                0x00000000        0x0 ./mpu9250.o
+ .text.setExternalFrameSync
+                0x00000000        0x0 ./mpu9250.o
+ .text.writeRegisters
+                0x00000000        0x0 ./mpu9250.o
+ .text.setZAccelOffset
+                0x00000000        0x0 ./mpu9250.o
+ .text.setYAccelOffset
+                0x00000000        0x0 ./mpu9250.o
+ .text.setXAccelOffset
+                0x00000000        0x0 ./mpu9250.o
+ .text.readMagRegister
+                0x00000000        0x0 ./mpu9250.o
+ .text.readRegister
+                0x00000000        0x0 ./mpu9250.o
+ .text.getGyroTestData
+                0x00000000        0x0 ./mpu9250.o
+ .text.getAccelerometerTestData
+                0x00000000        0x0 ./mpu9250.o
+ .text.getDeviceID
+                0x00000000        0x0 ./mpu9250.o
+ .text.testConnection
+                0x00000000        0x0 ./mpu9250.o
+ .text.getZGyroOffset
+                0x00000000        0x0 ./mpu9250.o
+ .text.getYGyroOffset
+                0x00000000        0x0 ./mpu9250.o
+ .text.getXGyroOffset
+                0x00000000        0x0 ./mpu9250.o
+ .text.getFIFOByte
+                0x00000000        0x0 ./mpu9250.o
+ .text.getExternalSensorByte
+                0x00000000        0x0 ./mpu9250.o
+ .text.getIntStatus
+                0x00000000        0x0 ./mpu9250.o
+ .text.getIntEnabled
+                0x00000000        0x0 ./mpu9250.o
+ .text.getSlate4InputByte
+                0x00000000        0x0 ./mpu9250.o
+ .text.getSlave4Register
+                0x00000000        0x0 ./mpu9250.o
+ .text.getSlave4Address
+                0x00000000        0x0 ./mpu9250.o
+ .text.getSlaveRegister
+                0x00000000        0x0 ./mpu9250.o
+ .text.getSlaveAddress
+                0x00000000        0x0 ./mpu9250.o
+ .text.getAccelZSelfTest
+                0x00000000        0x0 ./mpu9250.o
+ .text.getAccelYSelfTest
+                0x00000000        0x0 ./mpu9250.o
+ .text.getAccelXSelfTest
+                0x00000000        0x0 ./mpu9250.o
+ .text.getRate  0x00000000        0x0 ./mpu9250.o
+ .text.readMaskedRegister
+                0x00000000        0x0 ./mpu9250.o
+ .text.temperatureIsEnabled
+                0x00000000        0x0 ./mpu9250.o
+ .text.gyroZIsEnabled
+                0x00000000        0x0 ./mpu9250.o
+ .text.gyroYIsEnabled
+                0x00000000        0x0 ./mpu9250.o
+ .text.gyroXIsEnabled
+                0x00000000        0x0 ./mpu9250.o
+ .text.accelerometerZIsEnabled
+                0x00000000        0x0 ./mpu9250.o
+ .text.accelerometerYIsEnabled
+                0x00000000        0x0 ./mpu9250.o
+ .text.accelerometerXIsEnabled
+                0x00000000        0x0 ./mpu9250.o
+ .text.getClockSource
+                0x00000000        0x0 ./mpu9250.o
+ .text.getWakeCycleEnabled
+                0x00000000        0x0 ./mpu9250.o
+ .text.getSleepEnabled
+                0x00000000        0x0 ./mpu9250.o
+ .text.getI2CMasterModeEnabled
+                0x00000000        0x0 ./mpu9250.o
+ .text.getFIFOEnabled
+                0x00000000        0x0 ./mpu9250.o
+ .text.getSlaveDelayEnabled
+                0x00000000        0x0 ./mpu9250.o
+ .text.getExternalShadowDelayEnabled
+                0x00000000        0x0 ./mpu9250.o
+ .text.getIntI2CMasterEnabled
+                0x00000000        0x0 ./mpu9250.o
+ .text.getIntFIFOBufferOverflowEnabled
+                0x00000000        0x0 ./mpu9250.o
+ .text.getI2CBypassEnabled
+                0x00000000        0x0 ./mpu9250.o
+ .text.getFSyncInterruptEnabled
+                0x00000000        0x0 ./mpu9250.o
+ .text.getFSyncInterruptLevel
+                0x00000000        0x0 ./mpu9250.o
+ .text.getInterruptLatchClear
+                0x00000000        0x0 ./mpu9250.o
+ .text.getInterruptLatch
+                0x00000000        0x0 ./mpu9250.o
+ .text.getInterruptDrive
+                0x00000000        0x0 ./mpu9250.o
+ .text.getInterruptMode
+                0x00000000        0x0 ./mpu9250.o
+ .text.getSlave0Nack
+                0x00000000        0x0 ./mpu9250.o
+ .text.getSlave1Nack
+                0x00000000        0x0 ./mpu9250.o
+ .text.getSlave2Nack
+                0x00000000        0x0 ./mpu9250.o
+ .text.getSlave3Nack
+                0x00000000        0x0 ./mpu9250.o
+ .text.getSlave4Nack
+                0x00000000        0x0 ./mpu9250.o
+ .text.getLostArbitration
+                0x00000000        0x0 ./mpu9250.o
+ .text.getSlave4IsDone
+                0x00000000        0x0 ./mpu9250.o
+ .text.getPassthroughStatus
+                0x00000000        0x0 ./mpu9250.o
+ .text.getSlave4MasterDelay
+                0x00000000        0x0 ./mpu9250.o
+ .text.getSlave4WriteMode
+                0x00000000        0x0 ./mpu9250.o
+ .text.getSlave4InterruptEnabled
+                0x00000000        0x0 ./mpu9250.o
+ .text.getSlave4Enabled
+                0x00000000        0x0 ./mpu9250.o
+ .text.getSlaveDataLength
+                0x00000000        0x0 ./mpu9250.o
+ .text.getSlaveWordGroupOffset
+                0x00000000        0x0 ./mpu9250.o
+ .text.getSlaveWriteMode
+                0x00000000        0x0 ./mpu9250.o
+ .text.getSlaveWordByteSwap
+                0x00000000        0x0 ./mpu9250.o
+ .text.getSlaveEnabled
+                0x00000000        0x0 ./mpu9250.o
+ .text.getMasterClockSpeed
+                0x00000000        0x0 ./mpu9250.o
+ .text.getSlaveReadWriteTransitionEnabled
+                0x00000000        0x0 ./mpu9250.o
+ .text.getSlave3FIFOEnabled
+                0x00000000        0x0 ./mpu9250.o
+ .text.getWaitForExternalSensorEnabled
+                0x00000000        0x0 ./mpu9250.o
+ .text.getMultiMasterEnabled
+                0x00000000        0x0 ./mpu9250.o
+ .text.getSlave0FIFOEnabled
+                0x00000000        0x0 ./mpu9250.o
+ .text.getSlave1FIFOEnabled
+                0x00000000        0x0 ./mpu9250.o
+ .text.getSlave2FIFOEnabled
+                0x00000000        0x0 ./mpu9250.o
+ .text.getAccelFIFOEnabled
+                0x00000000        0x0 ./mpu9250.o
+ .text.getZGyroFIFOEnabled
+                0x00000000        0x0 ./mpu9250.o
+ .text.getYGyroFIFOEnabled
+                0x00000000        0x0 ./mpu9250.o
+ .text.getXGyroFIFOEnabled
+                0x00000000        0x0 ./mpu9250.o
+ .text.getTempFIFOEnabled
+                0x00000000        0x0 ./mpu9250.o
+ .text.getFullScaleAccelRange
+                0x00000000        0x0 ./mpu9250.o
+ .text.getFullScaleGyroRange
+                0x00000000        0x0 ./mpu9250.o
+ .text.getDLPFMode
+                0x00000000        0x0 ./mpu9250.o
+ .text.getExternalFrameSync
+                0x00000000        0x0 ./mpu9250.o
+ .text.readRegisters
+                0x00000000        0x0 ./mpu9250.o
+ .text.getTemperature
+                0x00000000        0x0 ./mpu9250.o
+ .text.getRotationZ
+                0x00000000        0x0 ./mpu9250.o
+ .text.getRotationY
+                0x00000000        0x0 ./mpu9250.o
+ .text.getRotationX
+                0x00000000        0x0 ./mpu9250.o
+ .text.getRotation
+                0x00000000        0x0 ./mpu9250.o
+ .text.getAccelerationZ
+                0x00000000        0x0 ./mpu9250.o
+ .text.getAccelerationY
+                0x00000000        0x0 ./mpu9250.o
+ .text.getAccelerationX
+                0x00000000        0x0 ./mpu9250.o
+ .text.getAcceleration
+                0x00000000        0x0 ./mpu9250.o
+ .text.getMotion6
+                0x00000000        0x0 ./mpu9250.o
+ .text.getMotion9
+                0x00000000        0x0 ./mpu9250.o
+ .text.getZAccelOffset
+                0x00000000        0x0 ./mpu9250.o
+ .text.getYAccelOffset
+                0x00000000        0x0 ./mpu9250.o
+ .text.getXAccelOffset
+                0x00000000        0x0 ./mpu9250.o
+ .text.getFIFOCount
+                0x00000000        0x0 ./mpu9250.o
+ .text.getExternalSensorWord
+                0x00000000        0x0 ./mpu9250.o
+ .text.getExternalSensorDWord
+                0x00000000        0x0 ./mpu9250.o
+ .data._address
+                0x00000000        0x0 ./mpu9250.o
+ .data._mag_address
+                0x00000000        0x0 ./mpu9250.o
+ COMMON         0x00000000        0x0 ./mpu9250.o
+ .text          0x00000000        0x0 ./mpu9255.o
+ .data          0x00000000        0x0 ./mpu9255.o
+ .bss           0x00000000        0x0 ./mpu9255.o
+ .text.Initalise_AccelGyro
+                0x00000000        0x0 ./mpu9255.o
+ .text.Read_Acc_Gyro
+                0x00000000        0x0 ./mpu9255.o
+ .text          0x00000000        0x0 ./uart.o
+ .data          0x00000000        0x0 ./uart.o
+ .bss           0x00000000        0x0 ./uart.o
+ .text.uart0_putChar
+                0x00000000        0x0 ./uart.o
+ .text.uart0_getChar
+                0x00000000        0x0 ./uart.o
+ .text.uart0_getString
+                0x00000000        0x0 ./uart.o
+ .text          0x00000000        0x0 ./ultrasonic.o
+ .data          0x00000000        0x0 ./ultrasonic.o
+ .bss           0x00000000        0x0 ./ultrasonic.o
+ .text          0x00000000        0x0 ./util.o
+ .data          0x00000000        0x0 ./util.o
+ .bss           0x00000000        0x0 ./util.o
+ .text.my_strlen
+                0x00000000        0x0 ./util.o
+ .text          0x00000000        0x0 D:\My Documents\GitHub\steve\steve_io\libArduinoCore.a(wiring_analog.c.o)
+ .data          0x00000000        0x0 D:\My Documents\GitHub\steve\steve_io\libArduinoCore.a(wiring_analog.c.o)
+ .bss           0x00000000        0x0 D:\My Documents\GitHub\steve\steve_io\libArduinoCore.a(wiring_analog.c.o)
+ .text.analogReference
+                0x00000000        0x0 D:\My Documents\GitHub\steve\steve_io\libArduinoCore.a(wiring_analog.c.o)
+ .text.analogRead
+                0x00000000        0x0 D:\My Documents\GitHub\steve\steve_io\libArduinoCore.a(wiring_analog.c.o)
+ .text.analogWrite
+                0x00000000        0x0 D:\My Documents\GitHub\steve\steve_io\libArduinoCore.a(wiring_analog.c.o)
+ .data.analog_reference
+                0x00000000        0x0 D:\My Documents\GitHub\steve\steve_io\libArduinoCore.a(wiring_analog.c.o)
+ .text          0x00000000        0x0 D:\My Documents\GitHub\steve\steve_io\libArduinoCore.a(wiring_digital.c.o)
+ .data          0x00000000        0x0 D:\My Documents\GitHub\steve\steve_io\libArduinoCore.a(wiring_digital.c.o)
+ .bss           0x00000000        0x0 D:\My Documents\GitHub\steve\steve_io\libArduinoCore.a(wiring_digital.c.o)
+ .text.turnOffPWM
+                0x00000000        0x0 D:\My Documents\GitHub\steve\steve_io\libArduinoCore.a(wiring_digital.c.o)
+ .text.pinMode  0x00000000        0x0 D:\My Documents\GitHub\steve\steve_io\libArduinoCore.a(wiring_digital.c.o)
+ .text.digitalWrite
+                0x00000000        0x0 D:\My Documents\GitHub\steve\steve_io\libArduinoCore.a(wiring_digital.c.o)
+ .text.digitalRead
+                0x00000000        0x0 D:\My Documents\GitHub\steve\steve_io\libArduinoCore.a(wiring_digital.c.o)
+ .progmem.data.digital_pin_to_timer_PGM
+                0x00000000        0x0 D:\My Documents\GitHub\steve\steve_io\libArduinoCore.a(wiring_digital.c.o)
+ .progmem.data.digital_pin_to_bit_mask_PGM
+                0x00000000        0x0 D:\My Documents\GitHub\steve\steve_io\libArduinoCore.a(wiring_digital.c.o)
+ .progmem.data.digital_pin_to_port_PGM
+                0x00000000        0x0 D:\My Documents\GitHub\steve\steve_io\libArduinoCore.a(wiring_digital.c.o)
+ .progmem.data.port_to_input_PGM
+                0x00000000        0x0 D:\My Documents\GitHub\steve\steve_io\libArduinoCore.a(wiring_digital.c.o)
+ .progmem.data.port_to_output_PGM
+                0x00000000        0x0 D:\My Documents\GitHub\steve\steve_io\libArduinoCore.a(wiring_digital.c.o)
+ .progmem.data.port_to_mode_PGM
+                0x00000000        0x0 D:\My Documents\GitHub\steve\steve_io\libArduinoCore.a(wiring_digital.c.o)
+ .text          0x00000000        0x0 c:/winavr-20100110/bin/../lib/gcc/avr/4.3.3/../../../../avr/lib/avr5\libm.a(addsf3.o)
+ .data          0x00000000        0x0 c:/winavr-20100110/bin/../lib/gcc/avr/4.3.3/../../../../avr/lib/avr5\libm.a(addsf3.o)
+ .bss           0x00000000        0x0 c:/winavr-20100110/bin/../lib/gcc/avr/4.3.3/../../../../avr/lib/avr5\libm.a(addsf3.o)
+ .text          0x00000000        0x0 c:/winavr-20100110/bin/../lib/gcc/avr/4.3.3/../../../../avr/lib/avr5\libm.a(addsf3x.o)
+ .data          0x00000000        0x0 c:/winavr-20100110/bin/../lib/gcc/avr/4.3.3/../../../../avr/lib/avr5\libm.a(addsf3x.o)
+ .bss           0x00000000        0x0 c:/winavr-20100110/bin/../lib/gcc/avr/4.3.3/../../../../avr/lib/avr5\libm.a(addsf3x.o)
+ .text          0x00000000        0x0 c:/winavr-20100110/bin/../lib/gcc/avr/4.3.3/../../../../avr/lib/avr5\libm.a(cmpsf2.o)
+ .data          0x00000000        0x0 c:/winavr-20100110/bin/../lib/gcc/avr/4.3.3/../../../../avr/lib/avr5\libm.a(cmpsf2.o)
+ .bss           0x00000000        0x0 c:/winavr-20100110/bin/../lib/gcc/avr/4.3.3/../../../../avr/lib/avr5\libm.a(cmpsf2.o)
+ .text          0x00000000        0x0 c:/winavr-20100110/bin/../lib/gcc/avr/4.3.3/../../../../avr/lib/avr5\libm.a(divsf3.o)
+ .data          0x00000000        0x0 c:/winavr-20100110/bin/../lib/gcc/avr/4.3.3/../../../../avr/lib/avr5\libm.a(divsf3.o)
+ .bss           0x00000000        0x0 c:/winavr-20100110/bin/../lib/gcc/avr/4.3.3/../../../../avr/lib/avr5\libm.a(divsf3.o)
+ .text          0x00000000        0x0 c:/winavr-20100110/bin/../lib/gcc/avr/4.3.3/../../../../avr/lib/avr5\libm.a(divsf3x.o)
+ .data          0x00000000        0x0 c:/winavr-20100110/bin/../lib/gcc/avr/4.3.3/../../../../avr/lib/avr5\libm.a(divsf3x.o)
+ .bss           0x00000000        0x0 c:/winavr-20100110/bin/../lib/gcc/avr/4.3.3/../../../../avr/lib/avr5\libm.a(divsf3x.o)
+ .text          0x00000000        0x0 c:/winavr-20100110/bin/../lib/gcc/avr/4.3.3/../../../../avr/lib/avr5\libm.a(fixunssfsi.o)
+ .data          0x00000000        0x0 c:/winavr-20100110/bin/../lib/gcc/avr/4.3.3/../../../../avr/lib/avr5\libm.a(fixunssfsi.o)
+ .bss           0x00000000        0x0 c:/winavr-20100110/bin/../lib/gcc/avr/4.3.3/../../../../avr/lib/avr5\libm.a(fixunssfsi.o)
+ .text          0x00000000        0x0 c:/winavr-20100110/bin/../lib/gcc/avr/4.3.3/../../../../avr/lib/avr5\libm.a(floatsisf.o)
+ .data          0x00000000        0x0 c:/winavr-20100110/bin/../lib/gcc/avr/4.3.3/../../../../avr/lib/avr5\libm.a(floatsisf.o)
+ .bss           0x00000000        0x0 c:/winavr-20100110/bin/../lib/gcc/avr/4.3.3/../../../../avr/lib/avr5\libm.a(floatsisf.o)
+ .text          0x00000000        0x0 c:/winavr-20100110/bin/../lib/gcc/avr/4.3.3/../../../../avr/lib/avr5\libm.a(fp_cmp.o)
+ .data          0x00000000        0x0 c:/winavr-20100110/bin/../lib/gcc/avr/4.3.3/../../../../avr/lib/avr5\libm.a(fp_cmp.o)
+ .bss           0x00000000        0x0 c:/winavr-20100110/bin/../lib/gcc/avr/4.3.3/../../../../avr/lib/avr5\libm.a(fp_cmp.o)
+ .text          0x00000000        0x0 c:/winavr-20100110/bin/../lib/gcc/avr/4.3.3/../../../../avr/lib/avr5\libm.a(fp_inf.o)
+ .data          0x00000000        0x0 c:/winavr-20100110/bin/../lib/gcc/avr/4.3.3/../../../../avr/lib/avr5\libm.a(fp_inf.o)
+ .bss           0x00000000        0x0 c:/winavr-20100110/bin/../lib/gcc/avr/4.3.3/../../../../avr/lib/avr5\libm.a(fp_inf.o)
+ .text          0x00000000        0x0 c:/winavr-20100110/bin/../lib/gcc/avr/4.3.3/../../../../avr/lib/avr5\libm.a(fp_nan.o)
+ .data          0x00000000        0x0 c:/winavr-20100110/bin/../lib/gcc/avr/4.3.3/../../../../avr/lib/avr5\libm.a(fp_nan.o)
+ .bss           0x00000000        0x0 c:/winavr-20100110/bin/../lib/gcc/avr/4.3.3/../../../../avr/lib/avr5\libm.a(fp_nan.o)
+ .text          0x00000000        0x0 c:/winavr-20100110/bin/../lib/gcc/avr/4.3.3/../../../../avr/lib/avr5\libm.a(fp_pscA.o)
+ .data          0x00000000        0x0 c:/winavr-20100110/bin/../lib/gcc/avr/4.3.3/../../../../avr/lib/avr5\libm.a(fp_pscA.o)
+ .bss           0x00000000        0x0 c:/winavr-20100110/bin/../lib/gcc/avr/4.3.3/../../../../avr/lib/avr5\libm.a(fp_pscA.o)
+ .text          0x00000000        0x0 c:/winavr-20100110/bin/../lib/gcc/avr/4.3.3/../../../../avr/lib/avr5\libm.a(fp_pscB.o)
+ .data          0x00000000        0x0 c:/winavr-20100110/bin/../lib/gcc/avr/4.3.3/../../../../avr/lib/avr5\libm.a(fp_pscB.o)
+ .bss           0x00000000        0x0 c:/winavr-20100110/bin/../lib/gcc/avr/4.3.3/../../../../avr/lib/avr5\libm.a(fp_pscB.o)
+ .text          0x00000000        0x0 c:/winavr-20100110/bin/../lib/gcc/avr/4.3.3/../../../../avr/lib/avr5\libm.a(fp_round.o)
+ .data          0x00000000        0x0 c:/winavr-20100110/bin/../lib/gcc/avr/4.3.3/../../../../avr/lib/avr5\libm.a(fp_round.o)
+ .bss           0x00000000        0x0 c:/winavr-20100110/bin/../lib/gcc/avr/4.3.3/../../../../avr/lib/avr5\libm.a(fp_round.o)
+ .text          0x00000000        0x0 c:/winavr-20100110/bin/../lib/gcc/avr/4.3.3/../../../../avr/lib/avr5\libm.a(fp_split3.o)
+ .data          0x00000000        0x0 c:/winavr-20100110/bin/../lib/gcc/avr/4.3.3/../../../../avr/lib/avr5\libm.a(fp_split3.o)
+ .bss           0x00000000        0x0 c:/winavr-20100110/bin/../lib/gcc/avr/4.3.3/../../../../avr/lib/avr5\libm.a(fp_split3.o)
+ .text          0x00000000        0x0 c:/winavr-20100110/bin/../lib/gcc/avr/4.3.3/../../../../avr/lib/avr5\libm.a(fp_zero.o)
+ .data          0x00000000        0x0 c:/winavr-20100110/bin/../lib/gcc/avr/4.3.3/../../../../avr/lib/avr5\libm.a(fp_zero.o)
+ .bss           0x00000000        0x0 c:/winavr-20100110/bin/../lib/gcc/avr/4.3.3/../../../../avr/lib/avr5\libm.a(fp_zero.o)
+ .text          0x00000000        0x0 c:/winavr-20100110/bin/../lib/gcc/avr/4.3.3/../../../../avr/lib/avr5\libm.a(gesf2.o)
+ .data          0x00000000        0x0 c:/winavr-20100110/bin/../lib/gcc/avr/4.3.3/../../../../avr/lib/avr5\libm.a(gesf2.o)
+ .bss           0x00000000        0x0 c:/winavr-20100110/bin/../lib/gcc/avr/4.3.3/../../../../avr/lib/avr5\libm.a(gesf2.o)
+ .text          0x00000000        0x0 c:/winavr-20100110/bin/../lib/gcc/avr/4.3.3/../../../../avr/lib/avr5\libm.a(mulsf3.o)
+ .data          0x00000000        0x0 c:/winavr-20100110/bin/../lib/gcc/avr/4.3.3/../../../../avr/lib/avr5\libm.a(mulsf3.o)
+ .bss           0x00000000        0x0 c:/winavr-20100110/bin/../lib/gcc/avr/4.3.3/../../../../avr/lib/avr5\libm.a(mulsf3.o)
+ .text          0x00000000        0x0 c:/winavr-20100110/bin/../lib/gcc/avr/4.3.3/../../../../avr/lib/avr5\libm.a(mulsf3x.o)
+ .data          0x00000000        0x0 c:/winavr-20100110/bin/../lib/gcc/avr/4.3.3/../../../../avr/lib/avr5\libm.a(mulsf3x.o)
+ .bss           0x00000000        0x0 c:/winavr-20100110/bin/../lib/gcc/avr/4.3.3/../../../../avr/lib/avr5\libm.a(mulsf3x.o)
+ .text          0x00000000        0x0 c:/winavr-20100110/bin/../lib/gcc/avr/4.3.3/avr5\libgcc.a(_udivmodhi4.o)
+ .data          0x00000000        0x0 c:/winavr-20100110/bin/../lib/gcc/avr/4.3.3/avr5\libgcc.a(_udivmodhi4.o)
+ .bss           0x00000000        0x0 c:/winavr-20100110/bin/../lib/gcc/avr/4.3.3/avr5\libgcc.a(_udivmodhi4.o)
+ .text          0x00000000        0x0 c:/winavr-20100110/bin/../lib/gcc/avr/4.3.3/avr5\libgcc.a(_divmodhi4.o)
+ .data          0x00000000        0x0 c:/winavr-20100110/bin/../lib/gcc/avr/4.3.3/avr5\libgcc.a(_divmodhi4.o)
+ .bss           0x00000000        0x0 c:/winavr-20100110/bin/../lib/gcc/avr/4.3.3/avr5\libgcc.a(_divmodhi4.o)
+ .text          0x00000000        0x0 c:/winavr-20100110/bin/../lib/gcc/avr/4.3.3/avr5\libgcc.a(_exit.o)
+ .data          0x00000000        0x0 c:/winavr-20100110/bin/../lib/gcc/avr/4.3.3/avr5\libgcc.a(_exit.o)
+ .bss           0x00000000        0x0 c:/winavr-20100110/bin/../lib/gcc/avr/4.3.3/avr5\libgcc.a(_exit.o)
+ .text.libgcc   0x00000000        0x0 c:/winavr-20100110/bin/../lib/gcc/avr/4.3.3/avr5\libgcc.a(_exit.o)
+ .text          0x00000000        0x0 c:/winavr-20100110/bin/../lib/gcc/avr/4.3.3/avr5\libgcc.a(_copy_data.o)
+ .data          0x00000000        0x0 c:/winavr-20100110/bin/../lib/gcc/avr/4.3.3/avr5\libgcc.a(_copy_data.o)
+ .bss           0x00000000        0x0 c:/winavr-20100110/bin/../lib/gcc/avr/4.3.3/avr5\libgcc.a(_copy_data.o)
+ .text.libgcc   0x00000000        0x0 c:/winavr-20100110/bin/../lib/gcc/avr/4.3.3/avr5\libgcc.a(_copy_data.o)
+ .text          0x00000000        0x0 c:/winavr-20100110/bin/../lib/gcc/avr/4.3.3/avr5\libgcc.a(_clear_bss.o)
+ .data          0x00000000        0x0 c:/winavr-20100110/bin/../lib/gcc/avr/4.3.3/avr5\libgcc.a(_clear_bss.o)
+ .bss           0x00000000        0x0 c:/winavr-20100110/bin/../lib/gcc/avr/4.3.3/avr5\libgcc.a(_clear_bss.o)
+ .text.libgcc   0x00000000        0x0 c:/winavr-20100110/bin/../lib/gcc/avr/4.3.3/avr5\libgcc.a(_clear_bss.o)
+
+Memory Configuration
+
+Name             Origin             Length             Attributes
+text             0x00000000         0x00020000         xr
+data             0x00800060         0x0000ffa0         rw !x
+eeprom           0x00810000         0x00010000         rw !x
+fuse             0x00820000         0x00000400         rw !x
+lock             0x00830000         0x00000400         rw !x
+signature        0x00840000         0x00000400         rw !x
+*default*        0x00000000         0xffffffff
+
+Linker script and memory map
+
+Address of section .data set to 0x800100
+LOAD c:/winavr-20100110/bin/../lib/gcc/avr/4.3.3/../../../../avr/lib/avr5/crtm328p.o
+LOAD ./adc.o
+LOAD ./commands.o
+LOAD ./i2c.o
+LOAD ./main.o
+LOAD ./motors.o
+LOAD ./mpu9250.o
+LOAD ./mpu9255.o
+LOAD ./uart.o
+LOAD ./ultrasonic.o
+LOAD ./util.o
+LOAD D:\My Documents\GitHub\steve\steve_io\libArduinoCore.a
+LOAD c:/winavr-20100110/bin/../lib/gcc/avr/4.3.3/../../../../avr/lib/avr5\libm.a
+LOAD c:/winavr-20100110/bin/../lib/gcc/avr/4.3.3/avr5\libgcc.a
+LOAD c:/winavr-20100110/bin/../lib/gcc/avr/4.3.3/../../../../avr/lib/avr5\libc.a
+LOAD c:/winavr-20100110/bin/../lib/gcc/avr/4.3.3/avr5\libgcc.a
+
+.hash
+ *(.hash)
+
+.dynsym
+ *(.dynsym)
+
+.dynstr
+ *(.dynstr)
+
+.gnu.version
+ *(.gnu.version)
+
+.gnu.version_d
+ *(.gnu.version_d)
+
+.gnu.version_r
+ *(.gnu.version_r)
+
+.rel.init
+ *(.rel.init)
+
+.rela.init
+ *(.rela.init)
+
+.rel.text
+ *(.rel.text)
+ *(.rel.text.*)
+ *(.rel.gnu.linkonce.t*)
+
+.rela.text
+ *(.rela.text)
+ *(.rela.text.*)
+ *(.rela.gnu.linkonce.t*)
+
+.rel.fini
+ *(.rel.fini)
+
+.rela.fini
+ *(.rela.fini)
+
+.rel.rodata
+ *(.rel.rodata)
+ *(.rel.rodata.*)
+ *(.rel.gnu.linkonce.r*)
+
+.rela.rodata
+ *(.rela.rodata)
+ *(.rela.rodata.*)
+ *(.rela.gnu.linkonce.r*)
+
+.rel.data
+ *(.rel.data)
+ *(.rel.data.*)
+ *(.rel.gnu.linkonce.d*)
+
+.rela.data
+ *(.rela.data)
+ *(.rela.data.*)
+ *(.rela.gnu.linkonce.d*)
+
+.rel.ctors
+ *(.rel.ctors)
+
+.rela.ctors
+ *(.rela.ctors)
+
+.rel.dtors
+ *(.rel.dtors)
+
+.rela.dtors
+ *(.rela.dtors)
+
+.rel.got
+ *(.rel.got)
+
+.rela.got
+ *(.rela.got)
+
+.rel.bss
+ *(.rel.bss)
+
+.rela.bss
+ *(.rela.bss)
+
+.rel.plt
+ *(.rel.plt)
+
+.rela.plt
+ *(.rela.plt)
+
+.text           0x00000000      0xd84
+ *(.vectors)
+ .vectors       0x00000000       0x68 c:/winavr-20100110/bin/../lib/gcc/avr/4.3.3/../../../../avr/lib/avr5/crtm328p.o
+                0x00000000                __vectors
+                0x00000000                __vector_default
+ *(.vectors)
+ *(.progmem.gcc*)
+ *(.progmem*)
+                0x00000068                . = ALIGN (0x2)
+                0x00000068                __trampolines_start = .
+ *(.trampolines)
+ .trampolines   0x00000068        0x0 linker stubs
+ *(.trampolines*)
+                0x00000068                __trampolines_end = .
+ *(.jumptables)
+ *(.jumptables*)
+ *(.lowtext)
+ *(.lowtext*)
+                0x00000068                __ctors_start = .
+ *(.ctors)
+                0x00000068                __ctors_end = .
+                0x00000068                __dtors_start = .
+ *(.dtors)
+                0x00000068                __dtors_end = .
+ SORT(*)(.ctors)
+ SORT(*)(.dtors)
+ *(.init0)
+ .init0         0x00000068        0x0 c:/winavr-20100110/bin/../lib/gcc/avr/4.3.3/../../../../avr/lib/avr5/crtm328p.o
+                0x00000068                __init
+ *(.init0)
+ *(.init1)
+ *(.init1)
+ *(.init2)
+ .init2         0x00000068        0xc c:/winavr-20100110/bin/../lib/gcc/avr/4.3.3/../../../../avr/lib/avr5/crtm328p.o
+ *(.init2)
+ *(.init3)
+ *(.init3)
+ *(.init4)
+ .init4         0x00000074       0x16 c:/winavr-20100110/bin/../lib/gcc/avr/4.3.3/avr5\libgcc.a(_copy_data.o)
+                0x00000074                __do_copy_data
+ .init4         0x0000008a       0x10 c:/winavr-20100110/bin/../lib/gcc/avr/4.3.3/avr5\libgcc.a(_clear_bss.o)
+                0x0000008a                __do_clear_bss
+ *(.init4)
+ *(.init5)
+ *(.init5)
+ *(.init6)
+ *(.init6)
+ *(.init7)
+ *(.init7)
+ *(.init8)
+ *(.init8)
+ *(.init9)
+ .init9         0x0000009a        0x8 c:/winavr-20100110/bin/../lib/gcc/avr/4.3.3/../../../../avr/lib/avr5/crtm328p.o
+ *(.init9)
+ *(.text)
+ .text          0x000000a2        0x4 c:/winavr-20100110/bin/../lib/gcc/avr/4.3.3/../../../../avr/lib/avr5/crtm328p.o
+                0x000000a2                __vector_22
+                0x000000a2                __vector_1
+                0x000000a2                __vector_24
+                0x000000a2                __vector_12
+                0x000000a2                __bad_interrupt
+                0x000000a2                __vector_6
+                0x000000a2                __vector_3
+                0x000000a2                __vector_23
+                0x000000a2                __vector_25
+                0x000000a2                __vector_11
+                0x000000a2                __vector_13
+                0x000000a2                __vector_17
+                0x000000a2                __vector_19
+                0x000000a2                __vector_7
+                0x000000a2                __vector_5
+                0x000000a2                __vector_4
+                0x000000a2                __vector_9
+                0x000000a2                __vector_2
+                0x000000a2                __vector_21
+                0x000000a2                __vector_15
+                0x000000a2                __vector_8
+                0x000000a2                __vector_14
+                0x000000a2                __vector_10
+                0x000000a2                __vector_16
+                0x000000a2                __vector_20
+                0x000000a6                . = ALIGN (0x2)
+ *(.text.*)
+ .text.adc_init
+                0x000000a6       0x28 ./adc.o
+                0x000000a6                adc_init
+ .text.process_command
+                0x000000ce      0x106 ./commands.o
+                0x000000ce                process_command
+ .text.copy_command
+                0x000001d4       0x2a ./commands.o
+                0x000001d4                copy_command
+ .text.i2c_init
+                0x000001fe        0xc ./i2c.o
+                0x000001fe                i2c_init
+ .text.i2c_start
+                0x0000020a       0x4c ./i2c.o
+                0x0000020a                i2c_start
+ .text.i2c_rep_start
+                0x00000256        0x6 ./i2c.o
+                0x00000256                i2c_rep_start
+ .text.i2c_stop
+                0x0000025c       0x10 ./i2c.o
+                0x0000025c                i2c_stop
+ .text.i2c_write
+                0x0000026c       0x24 ./i2c.o
+                0x0000026c                i2c_write
+ .text.i2c_readAck
+                0x00000290       0x14 ./i2c.o
+                0x00000290                i2c_readAck
+ .text.i2c_readNak
+                0x000002a4       0x14 ./i2c.o
+                0x000002a4                i2c_readNak
+ .text.__vector_18
+                0x000002b8       0x56 ./main.o
+                0x000002b8                __vector_18
+ .text.main     0x0000030e       0x38 ./main.o
+                0x0000030e                main
+ .text.motors_init
+                0x00000346        0xe ./motors.o
+                0x00000346                motors_init
+ .text.motors_go_tank
+                0x00000354      0x2c2 ./motors.o
+                0x00000354                motors_go_tank
+ .text.Trigger_Compass
+                0x00000616       0x3a ./mpu9255.o
+                0x00000616                Trigger_Compass
+ .text.Read_Compass
+                0x00000650       0x3e ./mpu9255.o
+                0x00000650                Read_Compass
+ .text.uart0_init
+                0x0000068e       0x28 ./uart.o
+                0x0000068e                uart0_init
+ .text.uart0_putString
+                0x000006b6       0x1a ./uart.o
+                0x000006b6                uart0_putString
+ .text.us_init  0x000006d0        0x4 ./ultrasonic.o
+                0x000006d0                us_init
+ .text.us_measure
+                0x000006d4       0xb4 ./ultrasonic.o
+                0x000006d4                us_measure
+ .text.my_reverse
+                0x00000788       0xd4 ./util.o
+                0x00000788                my_reverse
+ .text.uart0_itoaWrite
+                0x0000085c       0xaa ./util.o
+                0x0000085c                uart0_itoaWrite
+ .text.avr-libc.fplib
+                0x00000906        0xa c:/winavr-20100110/bin/../lib/gcc/avr/4.3.3/../../../../avr/lib/avr5\libm.a(addsf3.o)
+                0x00000906                __subsf3
+                0x00000908                __addsf3
+ .text.avr-libc.fplib
+                0x00000910       0xc0 c:/winavr-20100110/bin/../lib/gcc/avr/4.3.3/../../../../avr/lib/avr5\libm.a(addsf3x.o)
+                0x0000092a                __addsf3x
+ .text.avr-libc.fplib
+                0x000009d0        0x8 c:/winavr-20100110/bin/../lib/gcc/avr/4.3.3/../../../../avr/lib/avr5\libm.a(cmpsf2.o)
+                0x000009d0                __lesf2
+                0x000009d0                __nesf2
+                0x000009d0                __eqsf2
+                0x000009d0                __cmpsf2
+                0x000009d0                __ltsf2
+ .text.avr-libc.fplib
+                0x000009d8        0x4 c:/winavr-20100110/bin/../lib/gcc/avr/4.3.3/../../../../avr/lib/avr5\libm.a(divsf3.o)
+                0x000009d8                __divsf3
+ .text.avr-libc.fplib
+                0x000009dc       0xcc c:/winavr-20100110/bin/../lib/gcc/avr/4.3.3/../../../../avr/lib/avr5\libm.a(divsf3x.o)
+                0x000009f2                __divsf3x
+                0x000009f6                __divsf3_pse
+ .text.avr-libc.fplib
+                0x00000aa8       0x58 c:/winavr-20100110/bin/../lib/gcc/avr/4.3.3/../../../../avr/lib/avr5\libm.a(fixunssfsi.o)
+                0x00000aa8                __fixunssfsi
+ .text.avr-libc.fplib
+                0x00000b00       0x7a c:/winavr-20100110/bin/../lib/gcc/avr/4.3.3/../../../../avr/lib/avr5\libm.a(floatsisf.o)
+                0x00000b04                __floatsisf
+                0x00000b00                __floatunsisf
+ .text.avr-libc.fplib
+                0x00000b7a       0x48 c:/winavr-20100110/bin/../lib/gcc/avr/4.3.3/../../../../avr/lib/avr5\libm.a(fp_cmp.o)
+                0x00000b7a                __fp_cmp
+ .text.avr-libc.fplib
+                0x00000bc2        0xc c:/winavr-20100110/bin/../lib/gcc/avr/4.3.3/../../../../avr/lib/avr5\libm.a(fp_inf.o)
+                0x00000bc2                __fp_inf
+ .text.avr-libc.fplib
+                0x00000bce        0x6 c:/winavr-20100110/bin/../lib/gcc/avr/4.3.3/../../../../avr/lib/avr5\libm.a(fp_nan.o)
+                0x00000bce                __fp_nan
+ .text.avr-libc.fplib
+                0x00000bd4        0xe c:/winavr-20100110/bin/../lib/gcc/avr/4.3.3/../../../../avr/lib/avr5\libm.a(fp_pscA.o)
+                0x00000bd4                __fp_pscA
+ .text.avr-libc.fplib
+                0x00000be2        0xe c:/winavr-20100110/bin/../lib/gcc/avr/4.3.3/../../../../avr/lib/avr5\libm.a(fp_pscB.o)
+                0x00000be2                __fp_pscB
+ .text.avr-libc.fplib
+                0x00000bf0       0x22 c:/winavr-20100110/bin/../lib/gcc/avr/4.3.3/../../../../avr/lib/avr5\libm.a(fp_round.o)
+                0x00000bf0                __fp_round
+ .text.avr-libc.fplib
+                0x00000c12       0x44 c:/winavr-20100110/bin/../lib/gcc/avr/4.3.3/../../../../avr/lib/avr5\libm.a(fp_split3.o)
+                0x00000c12                __fp_split3
+                0x00000c22                __fp_splitA
+ .text.avr-libc.fplib
+                0x00000c56        0xe c:/winavr-20100110/bin/../lib/gcc/avr/4.3.3/../../../../avr/lib/avr5\libm.a(fp_zero.o)
+                0x00000c56                __fp_zero
+                0x00000c58                __fp_szero
+ .text.avr-libc.fplib
+                0x00000c64        0x8 c:/winavr-20100110/bin/../lib/gcc/avr/4.3.3/../../../../avr/lib/avr5\libm.a(gesf2.o)
+                0x00000c64                __gtsf2
+                0x00000c64                __gesf2
+ .text.avr-libc.fplib
+                0x00000c6c        0x4 c:/winavr-20100110/bin/../lib/gcc/avr/4.3.3/../../../../avr/lib/avr5\libm.a(mulsf3.o)
+                0x00000c6c                __mulsf3
+ .text.avr-libc.fplib
+                0x00000c70       0xc2 c:/winavr-20100110/bin/../lib/gcc/avr/4.3.3/../../../../avr/lib/avr5\libm.a(mulsf3x.o)
+                0x00000c88                __mulsf3_pse
+                0x00000c84                __mulsf3x
+ .text.libgcc   0x00000d32       0x28 c:/winavr-20100110/bin/../lib/gcc/avr/4.3.3/avr5\libgcc.a(_udivmodhi4.o)
+                0x00000d32                __udivmodhi4
+ .text.libgcc   0x00000d5a       0x26 c:/winavr-20100110/bin/../lib/gcc/avr/4.3.3/avr5\libgcc.a(_divmodhi4.o)
+                0x00000d5a                __divmodhi4
+                0x00000d5a                _div
+                0x00000d80                . = ALIGN (0x2)
+ *(.fini9)
+ .fini9         0x00000d80        0x0 c:/winavr-20100110/bin/../lib/gcc/avr/4.3.3/avr5\libgcc.a(_exit.o)
+                0x00000d80                exit
+                0x00000d80                _exit
+ *(.fini9)
+ *(.fini8)
+ *(.fini8)
+ *(.fini7)
+ *(.fini7)
+ *(.fini6)
+ *(.fini6)
+ *(.fini5)
+ *(.fini5)
+ *(.fini4)
+ *(.fini4)
+ *(.fini3)
+ *(.fini3)
+ *(.fini2)
+ *(.fini2)
+ *(.fini1)
+ *(.fini1)
+ *(.fini0)
+ .fini0         0x00000d80        0x4 c:/winavr-20100110/bin/../lib/gcc/avr/4.3.3/avr5\libgcc.a(_exit.o)
+ *(.fini0)
+                0x00000d84                _etext = .
+
+.data           0x00800100       0x60 load address 0x00000d84
+                0x00800100                PROVIDE (__data_start, .)
+ *(.data)
+ .data          0x00800100       0x44 ./commands.o
+ .data          0x00800144       0x1b ./main.o
+ *(.data*)
+ *(.rodata)
+ *(.rodata*)
+ *(.gnu.linkonce.d*)
+                0x00800160                . = ALIGN (0x2)
+ *fill*         0x0080015f        0x1 00
+                0x00800160                _edata = .
+                0x00800160                PROVIDE (__data_end, .)
+
+.bss            0x00800160       0x12
+                0x00800160                PROVIDE (__bss_start, .)
+ *(.bss)
+ *(.bss*)
+ *(COMMON)
+ COMMON         0x00800160       0x12 ./commands.o
+                0x00800160                data_count
+                0x00800161                command_in
+                0x00800169                data_in
+                0x00800171                command_ready
+                0x00800172                PROVIDE (__bss_end, .)
+                0x00000d84                __data_load_start = LOADADDR (.data)
+                0x00000de4                __data_load_end = (__data_load_start + SIZEOF (.data))
+
+.noinit         0x00800172        0x0
+                0x00800172                PROVIDE (__noinit_start, .)
+ *(.noinit*)
+                0x00800172                PROVIDE (__noinit_end, .)
+                0x00800172                _end = .
+                0x00800172                PROVIDE (__heap_start, .)
+
+.eeprom         0x00810000        0x0
+ *(.eeprom*)
+                0x00810000                __eeprom_end = .
+
+.fuse
+ *(.fuse)
+ *(.lfuse)
+ *(.hfuse)
+ *(.efuse)
+
+.lock
+ *(.lock*)
+
+.signature
+ *(.signature*)
+
+.stab
+ *(.stab)
+
+.stabstr
+ *(.stabstr)
+
+.stab.excl
+ *(.stab.excl)
+
+.stab.exclstr
+ *(.stab.exclstr)
+
+.stab.index
+ *(.stab.index)
+
+.stab.indexstr
+ *(.stab.indexstr)
+
+.comment        0x00000000       0x11
+ *(.comment)
+ .comment       0x00000000       0x11 D:\My Documents\GitHub\steve\steve_io\libArduinoCore.a(wiring_analog.c.o)
+                                 0x12 (size before relaxing)
+ .comment       0x00000000       0x12 D:\My Documents\GitHub\steve\steve_io\libArduinoCore.a(wiring_digital.c.o)
+
+.debug
+ *(.debug)
+
+.line
+ *(.line)
+
+.debug_srcinfo
+ *(.debug_srcinfo)
+
+.debug_sfnames
+ *(.debug_sfnames)
+
+.debug_aranges  0x00000000       0x68
+ *(.debug_aranges)
+ .debug_aranges
+                0x00000000       0x30 D:\My Documents\GitHub\steve\steve_io\libArduinoCore.a(wiring_analog.c.o)
+ .debug_aranges
+                0x00000030       0x38 D:\My Documents\GitHub\steve\steve_io\libArduinoCore.a(wiring_digital.c.o)
+
+.debug_pubnames
+ *(.debug_pubnames)
+
+.debug_info     0x00000000      0x872
+ *(.debug_info)
+ .debug_info    0x00000000      0x281 D:\My Documents\GitHub\steve\steve_io\libArduinoCore.a(wiring_analog.c.o)
+ .debug_info    0x00000281      0x5f1 D:\My Documents\GitHub\steve\steve_io\libArduinoCore.a(wiring_digital.c.o)
+ *(.gnu.linkonce.wi.*)
+
+.debug_abbrev   0x00000000      0x2e6
+ *(.debug_abbrev)
+ .debug_abbrev  0x00000000      0x184 D:\My Documents\GitHub\steve\steve_io\libArduinoCore.a(wiring_analog.c.o)
+ .debug_abbrev  0x00000184      0x162 D:\My Documents\GitHub\steve\steve_io\libArduinoCore.a(wiring_digital.c.o)
+
+.debug_line     0x00000000      0x3a1
+ *(.debug_line)
+ .debug_line    0x00000000      0x1d2 D:\My Documents\GitHub\steve\steve_io\libArduinoCore.a(wiring_analog.c.o)
+ .debug_line    0x000001d2      0x1cf D:\My Documents\GitHub\steve\steve_io\libArduinoCore.a(wiring_digital.c.o)
+
+.debug_frame    0x00000000       0xdc
+ *(.debug_frame)
+ .debug_frame   0x00000000       0x54 D:\My Documents\GitHub\steve\steve_io\libArduinoCore.a(wiring_analog.c.o)
+ .debug_frame   0x00000054       0x88 D:\My Documents\GitHub\steve\steve_io\libArduinoCore.a(wiring_digital.c.o)
+
+.debug_str      0x00000000      0x291
+ *(.debug_str)
+ .debug_str     0x00000000      0x18e D:\My Documents\GitHub\steve\steve_io\libArduinoCore.a(wiring_analog.c.o)
+                                0x1c7 (size before relaxing)
+ .debug_str     0x0000018e      0x103 D:\My Documents\GitHub\steve\steve_io\libArduinoCore.a(wiring_digital.c.o)
+                                0x228 (size before relaxing)
+
+.debug_loc      0x00000000      0x73e
+ *(.debug_loc)
+ .debug_loc     0x00000000      0x127 D:\My Documents\GitHub\steve\steve_io\libArduinoCore.a(wiring_analog.c.o)
+ .debug_loc     0x00000127      0x617 D:\My Documents\GitHub\steve\steve_io\libArduinoCore.a(wiring_digital.c.o)
+
+.debug_macinfo
+ *(.debug_macinfo)
+OUTPUT(steve_io.elf elf32-avr)
+LOAD linker stubs
+
+.debug_ranges   0x00000000       0x60
+ .debug_ranges  0x00000000       0x20 D:\My Documents\GitHub\steve\steve_io\libArduinoCore.a(wiring_analog.c.o)
+ .debug_ranges  0x00000020       0x40 D:\My Documents\GitHub\steve\steve_io\libArduinoCore.a(wiring_digital.c.o)
