@@ -116,6 +116,7 @@ void process_command()
   case 'D':               // Drive command
     if (command_in[1] == '=')
     {
+      // Drive command
       motors_go_tank(command_in[2], command_in[3], command_in[4], command_in[5]);
     }
     else if (command_in[1] == '?')
@@ -123,10 +124,10 @@ void process_command()
       // Do the query action for D
       Serial.print("Drive\r\n");
     }
-    else if (command_in[1] == 'B')
+    else if (command_in[1] == 'S')
     {
-      delay(4000);
-      motors_go_tank(FORWARD,LEFT,100,100);
+      // Stop command
+      motors_stop_tank();
     }
     break;
   case 'Q':               // Query command
@@ -241,17 +242,21 @@ void motors_init()
 
 void motors_go_tank(byte direction, byte heading, byte duty, double distance)
 {
-  // Todo: Not be lazy and actually implement PWM
-
   //Forward: MOTOR_A = HIGH, MOTOR_B = LOW
   //Reverse: MOTOR_A = LOW, MOTOR_B = HIGH
   //Brake: MOTOR_A = MOTOR_B
 
-  byte left_duty = 128;
-  byte right_duty = 128;
-
-  double delay_on = ((double)duty / 100) * 500;     // Sets the on-time for the motor
-  double delay_off = (500 - delay_on);              // Sets the off-time for the motor
+  byte duty_left = duty;
+  byte duty_right = duty;
+  
+  if (heading == LEFT)
+  {
+    duty_left /= 2;
+  }
+  else if (heading == RIGHT)
+  {
+    duty_right /= 2;
+  }  
 
   if (direction == FORWARD)
   {
@@ -266,6 +271,18 @@ void motors_go_tank(byte direction, byte heading, byte duty, double distance)
   else if (direction == NEUTRAL)
   {
     // No forward, only pivot
+    if (heading == LEFT)
+    {
+      digitalWrite(MOTOR_B1, HIGH);
+      digitalWrite(MOTOR_A2, HIGH);
+    }
+    else if (heading == RIGHT)
+    {
+      digitalWrite(MOTOR_A1, HIGH);
+      digitalWrite(MOTOR_B2, HIGH);      
+    }
+
+    duty_left = duty_right = duty;
   }
   else if (direction == BRAKE)
   {    
@@ -275,12 +292,18 @@ void motors_go_tank(byte direction, byte heading, byte duty, double distance)
     digitalWrite(MOTOR_B2, HIGH);
   }
 
-  while (distance > 0)
-  {
-    analogWrite(MOTOR_EN1, 255);
-    analogWrite(MOTOR_EN2, 255);
-    distance--;
-  }
+  analogWrite(MOTOR_EN1, duty_left);
+  analogWrite(MOTOR_EN2, duty_right);
+}
+
+void motors_stop_tank()
+{
+  digitalWrite(MOTOR_EN1, LOW);
+  digitalWrite(MOTOR_EN2, LOW);
+  digitalWrite(MOTOR_A1, LOW);
+  digitalWrite(MOTOR_A2, LOW);
+  digitalWrite(MOTOR_B1, LOW);
+  digitalWrite(MOTOR_B2, LOW);
 }
 
 // This function read Nbytes bytes from I2C device at address Address. 
