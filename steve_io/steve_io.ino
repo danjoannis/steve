@@ -117,7 +117,7 @@ void process_command()
     if (command_in[1] == '=')
     {
       // Drive command
-      motors_go_tank(command_in[2], command_in[3], command_in[4], command_in[5]);
+      motors_go_tank(command_in[2], command_in[3], command_in[4]);
     }
     else if (command_in[1] == '?')
     {
@@ -231,31 +231,29 @@ void motors_init()
   pinMode(MOTOR_A2, OUTPUT);
   pinMode(MOTOR_B2, OUTPUT);
 
-  // Set all low
-  digitalWrite(MOTOR_EN1, LOW);
-  digitalWrite(MOTOR_EN2, LOW);
-  digitalWrite(MOTOR_A1, LOW);
-  digitalWrite(MOTOR_B1, LOW);
-  digitalWrite(MOTOR_A2, LOW);
-  digitalWrite(MOTOR_B2, LOW);
+  // Stop all motors
+  motors_stop_tank();
 }
 
-void motors_go_tank(byte direction, byte heading, byte duty, double distance)
+void motors_go_tank(byte direction, byte heading, byte duty)
 {
   //Forward: MOTOR_A = HIGH, MOTOR_B = LOW
   //Reverse: MOTOR_A = LOW, MOTOR_B = HIGH
   //Brake: MOTOR_A = MOTOR_B
+
+  // Reset motors to off
+  motors_stop_tank();
 
   byte duty_left = duty;
   byte duty_right = duty;
   
   if (heading == LEFT)
   {
-    duty_left /= 2;
+    duty_left *= 0.75;
   }
   else if (heading == RIGHT)
   {
-    duty_right /= 2;
+    duty_right *= 0.75;
   }  
 
   if (direction == FORWARD)
@@ -298,11 +296,12 @@ void motors_go_tank(byte direction, byte heading, byte duty, double distance)
 
 void motors_stop_tank()
 {
+  // Set all low
   digitalWrite(MOTOR_EN1, LOW);
   digitalWrite(MOTOR_EN2, LOW);
   digitalWrite(MOTOR_A1, LOW);
-  digitalWrite(MOTOR_A2, LOW);
   digitalWrite(MOTOR_B1, LOW);
+  digitalWrite(MOTOR_A2, LOW);
   digitalWrite(MOTOR_B2, LOW);
 }
 
