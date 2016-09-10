@@ -5,15 +5,18 @@
  * 
  * Allows for the control of STEVE's motors and peripherals,
  * as well as measurement and sampling of various sensors.
+ * 
+ * Designed for use with Arduino Mega 2560
+ * 
  */
 
 // Motors
-#define MOTOR_EN1 11  // EN1
-#define MOTOR_EN2 10  // EN2
-#define MOTOR_A1 12   // IN1
-#define MOTOR_B1 13   // IN2
-#define MOTOR_A2 9   // IN3
-#define MOTOR_B2 8   // IN4
+#define MOTOR_ENA 2  // EN1
+#define MOTOR_ENB 3  // EN2
+#define MOTOR_A1 31  // IN1
+#define MOTOR_A2 32  // IN2
+#define MOTOR_B1 33  // IN3
+#define MOTOR_B2 34  // IN4
 
 #define NEUTRAL 0
 #define FORWARD 1
@@ -24,8 +27,8 @@
 #define RIGHT   2
 
 // Ultrasonic rangefinder
-#define US_TRIG 6
-#define US_ECHO 7
+#define US_TRIG 43
+#define US_ECHO 42
 #define US_TIMEOUT 0xffff
 #define US_NO_OBSTACLE 0xfffe
 
@@ -118,6 +121,10 @@ void process_command()
     {
       // Drive command
       motors_go_tank(command_in[2], command_in[3], command_in[4]);
+    }
+    else if (command_in[1] == 'D')
+    {      
+      motors_go_tank(1, 0, 255);
     }
     else if (command_in[1] == '?')
     {
@@ -224,11 +231,11 @@ uint16_t us_measure()
 void motors_init()
 {
   // Configure outputs
-  pinMode(MOTOR_EN1, OUTPUT);
-  pinMode(MOTOR_EN2, OUTPUT);
+  pinMode(MOTOR_ENA, OUTPUT);
+  pinMode(MOTOR_ENB, OUTPUT);
   pinMode(MOTOR_A1, OUTPUT);
-  pinMode(MOTOR_B1, OUTPUT);
   pinMode(MOTOR_A2, OUTPUT);
+  pinMode(MOTOR_B1, OUTPUT);
   pinMode(MOTOR_B2, OUTPUT);
 
   // Stop all motors
@@ -237,9 +244,9 @@ void motors_init()
 
 void motors_go_tank(byte direction, byte heading, byte duty)
 {
-  //Forward: MOTOR_A = HIGH, MOTOR_B = LOW
-  //Reverse: MOTOR_A = LOW, MOTOR_B = HIGH
-  //Brake: MOTOR_A = MOTOR_B
+  //Forward: MOTOR_X1 = HIGH, MOTOR_X2 = LOW
+  //Reverse: MOTOR_X1 = LOW, MOTOR_X2 = HIGH
+  //Brake: MOTOR_X1 = MOTOR_X2
 
   // Reset motors to off
   motors_stop_tank();
@@ -263,25 +270,25 @@ void motors_go_tank(byte direction, byte heading, byte duty)
   if (direction == FORWARD)
   {
     digitalWrite(MOTOR_A1, HIGH);
-    digitalWrite(MOTOR_B2, HIGH);
+    digitalWrite(MOTOR_B1, HIGH);
   }
   else if (direction == REVERSE)
   {    
-    digitalWrite(MOTOR_B1, HIGH);
     digitalWrite(MOTOR_A2, HIGH);
+    digitalWrite(MOTOR_B2, HIGH);
   }
   else if (direction == NEUTRAL)
   {
     // No forward, only pivot
     if (heading == LEFT)
     {
+      digitalWrite(MOTOR_A2, HIGH);
       digitalWrite(MOTOR_B1, HIGH);
-      digitalWrite(MOTOR_B2, HIGH);
     }
     else if (heading == RIGHT)
     {
       digitalWrite(MOTOR_A1, HIGH);
-      digitalWrite(MOTOR_A2, HIGH);      
+      digitalWrite(MOTOR_B2, HIGH);      
     }
 
     duty_left = duty_right = duty;
@@ -294,18 +301,18 @@ void motors_go_tank(byte direction, byte heading, byte duty)
     digitalWrite(MOTOR_B2, HIGH);
   }
 
-  analogWrite(MOTOR_EN1, duty_left);
-  analogWrite(MOTOR_EN2, duty_right);
+  analogWrite(MOTOR_ENA, duty_left);
+  analogWrite(MOTOR_ENB, duty_right);
 }
 
 void motors_stop_tank()
 {
   // Set all low
-  digitalWrite(MOTOR_EN1, LOW);
-  digitalWrite(MOTOR_EN2, LOW);
+  digitalWrite(MOTOR_ENA, LOW);
+  digitalWrite(MOTOR_ENB, LOW);
   digitalWrite(MOTOR_A1, LOW);
-  digitalWrite(MOTOR_B1, LOW);
   digitalWrite(MOTOR_A2, LOW);
+  digitalWrite(MOTOR_B1, LOW);
   digitalWrite(MOTOR_B2, LOW);
 }
 
