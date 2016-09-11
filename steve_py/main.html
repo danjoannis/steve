@@ -2,7 +2,15 @@
 	<head>
 		<title>STEVE - Console</title>
 		
-		<script src="http://www.w3schools.com/lib/w3data.js"></script>		
+		<script src="http://www.w3schools.com/lib/w3data.js"></script>
+
+		<script>
+			function updateStatus()
+			{
+				w3IncludeHTML();
+				var refresh = setTimeout(updateStatus, 2000);
+			}
+		</script>
 	</head>
 
 	<body>
@@ -12,8 +20,10 @@
 		Time: <div w3-include-html="/time"></div><br>
 		CPU Temp: <div w3-include-html="/cputemp"></div>
 		
-		<script>
-			setInterval(w3IncludeHTML, 2000);
+		<script>			
+			updateStatus();
 		</script>
+		
+		The end!
 	</body>
 </html>
