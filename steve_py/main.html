@@ -8,23 +8,27 @@
 			function updateStatus()
 			{
 				w3IncludeHTML();
-				var refresh = setTimeout(updateStatus, 2000);
+				delay(1000);
+				updateStatus();
 			}
 		</script>
+		
+		<style type="text/css">
+			div.inline { float:left; }
+			.clearBoth { clear:both; }
+		</style>
 	</head>
 
 	<body>
 		<h2>STEVE</h2>
 		<h4>Robot Console</h4>
 		<hr><br>
-		Time: <div w3-include-html="/time"></div><br>
-		CPU Temp: <div w3-include-html="/cputemp"></div>
-		Front distance: <div w3-include-html="/distance_front"></div>cm
+		Time: <div class="inline" w3-include-html="/time"></div><br>
+		CPU Temp: <div class="inline" w3-include-html="/cputemp"></div> °C<br>
+		Front distance: <div class="inline" w3-include-html="/distance_front"></div> cm<br>
 		
 		<script>			
 			updateStatus();
 		</script>
-		
-		The end!
 	</body>
 </html>
