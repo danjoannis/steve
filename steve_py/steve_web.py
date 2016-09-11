@@ -6,6 +6,10 @@ def cpu_temp():
   cpu_temp = dev.read()[5:-3]
   return cpu_temp
 
+@route('/time')
+def pi_time():
+  return time.strftime("%c")
+
 @route('/cputemp')
 def temp():
   return cpu_temp()
