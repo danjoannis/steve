@@ -1,5 +1,9 @@
-import os, time
+#!/usr/bin/env python
+
+import connect_io, os, time, io
 from bottle import route, run, template
+
+sio = io.TextIOWrapper(io.BufferedRWPair(connect_io.ser, connect_io.ser))
 
 def cpu_temp():
   dev = os.popen('/opt/vc/bin/vcgencmd measure_temp')
@@ -13,6 +17,12 @@ def pi_time():
 @route('/cputemp')
 def temp():
   return cpu_temp()
+
+@route('/distance_front')
+def distance_front():
+  sio.write(unicode("Q?U\r"))
+  sio.flush()
+  return sio.readline()
 
 @route('/')
 def index():
