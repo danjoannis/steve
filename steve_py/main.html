@@ -93,7 +93,7 @@
           if (Math.abs(joystick.deltaY()) > 60) duty = "4";
           if (Math.abs(joystick.deltaY()) > 80) duty = "5";          
 
-          command = "/drive/" + direction + "/" + heading + "/" + duty
+          command = "/drive/" + direction + "/" + heading + "/" + duty;
           
           if (oldCommand != command)
           {

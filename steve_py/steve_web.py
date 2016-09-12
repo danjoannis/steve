@@ -25,7 +25,7 @@ def distance_front():
 @route('/drive/<direction>/<heading>/<duty>')
 def drive(direction, heading, duty):
   command = "D="
-  if duty == 0:
+  if duty == "0":
     command += "S"
   else:
     command += direction
