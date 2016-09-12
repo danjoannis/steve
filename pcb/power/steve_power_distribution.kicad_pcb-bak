@@ -772,7 +772,7 @@
     )
   )
 
-  (gr_text "5V\nM\nVB\n5V\nPI" (at 75 105 90) (layer F.SilkS)
+  (gr_text "5V\nM\n5V\nPI\nVB" (at 75 105 90) (layer F.SilkS)
     (effects (font (size 1.5 1.5) (thickness 0.15)) (justify right))
   )
   (gr_line (start 100 150) (end 50 150) (angle 90) (layer Edge.Cuts) (width 0.15))
