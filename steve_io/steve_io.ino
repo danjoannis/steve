@@ -18,13 +18,13 @@
 #define MOTOR_B1 33  // IN3
 #define MOTOR_B2 34  // IN4
 
-#define NEUTRAL 0
-#define FORWARD 1
-#define REVERSE 2
-#define BRAKE  3
-#define CENTRE  0
-#define LEFT  1
-#define RIGHT   2
+#define NEUTRAL '0'
+#define FORWARD '1'
+#define REVERSE '2'
+#define BRAKE  '3'
+#define CENTRE  '0'
+#define LEFT  '1'
+#define RIGHT   '2'
 
 // Ultrasonic rangefinder
 #define US_TRIG 43
@@ -251,22 +251,34 @@ void motors_go_tank(byte direction, byte heading, byte duty)
   // Reset motors to off
   motors_stop_tank();
   
+  if (duty == '0') duty = 0;
+  else if (duty == '1') duty = 1;
+  else if (duty == '2') duty = 2;
+  else if (duty == '3') duty = 3;
+  else if (duty == '4') duty = 4;
+  else if (duty == '5') duty = 5;
+  
   byte duty_left;
   byte duty_right;
+  byte duty_forward;
 
   // Lowest usable duty is 200, so proportion in %
-  if (duty > 100) duty_left = duty_right = 255;
-  else duty_left = duty_right = 200 + (55 * duty / 100);
+  if ((duty < 1) | (duty > 5)) duty_left = duty_right = 0;
+  else duty_forward = 200 + (55 * duty / 5);
   
   if (heading == LEFT)
   {
-    duty_left *= 0.75;
+    duty_left = 0;
   }
   else if (heading == RIGHT)
   {
-    duty_right *= 0.75;
-  }  
-
+    duty_right = 0;
+  }
+  else if (heading == CENTRE)
+  {
+    duty_left = duty_right = duty_forward;
+  }
+  
   if (direction == FORWARD)
   {
     digitalWrite(MOTOR_A1, HIGH);
@@ -284,14 +296,14 @@ void motors_go_tank(byte direction, byte heading, byte duty)
     {
       digitalWrite(MOTOR_A2, HIGH);
       digitalWrite(MOTOR_B1, HIGH);
+      duty_left = duty_right = duty_forward;
     }
     else if (heading == RIGHT)
     {
       digitalWrite(MOTOR_A1, HIGH);
-      digitalWrite(MOTOR_B2, HIGH);      
+      digitalWrite(MOTOR_B2, HIGH);
+      duty_left = duty_right = duty_forward;
     }
-
-    duty_left = duty_right = duty;
   }
   else if (direction == BRAKE)
   {    

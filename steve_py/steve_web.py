@@ -1,6 +1,6 @@
 #!/usr/bin/env python
 
-import connect_io, os, time, io
+import connect_io, os, time, io, warehouse
 from bottle import route, run, template
 
 sio = io.TextIOWrapper(io.BufferedRWPair(connect_io.ser, connect_io.ser))
@@ -16,13 +16,25 @@ def pi_time():
 
 @route('/cputemp')
 def temp():
-  return cpu_temp()
+  return warehouse.cpuTemp
 
 @route('/distance_front')
 def distance_front():
-  sio.write(unicode("Q?U\r"))
+  return warehouse.distanceFront
+
+@route('/drive/<direction>/<heading>/<duty>')
+def drive(direction, heading, duty):
+  command = "D="
+  if duty == 0:
+    command += "S"
+  else:
+    command += direction
+    command += heading
+    command += duty
+  command += "\r"
+  sio.write(unicode(command))
   sio.flush()
-  return sio.readline()
+  print(command)
 
 @route('/')
 def index():
