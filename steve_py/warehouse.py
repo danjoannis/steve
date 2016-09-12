@@ -30,16 +30,13 @@ def getCpuTemp():
   cpuTemp = dev.read()[5:-3]
 
 def getDistanceFront():
-  sio.write(unicode("Q?U\r"))
-  sio.flush()
+  connect_io.sio.write(unicode("Q?U\r"))
+  connect_io.sio.flush()
   global distanceFront
-  distanceFront = sio.readline()
+  distanceFront = connect_io.sio.readline()
   
 # Init
-sio = io.TextIOWrapper(io.BufferedRWPair(connect_io.ser, connect_io.ser))
-
 thread1 = getStats(1, "GetStats-1", 1)
 
 # Main
-
 thread1.start()

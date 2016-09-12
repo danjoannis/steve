@@ -3,8 +3,6 @@
 import connect_io, os, time, io, warehouse
 from bottle import route, run, template
 
-sio = io.TextIOWrapper(io.BufferedRWPair(connect_io.ser, connect_io.ser))
-
 def cpu_temp():
   dev = os.popen('/opt/vc/bin/vcgencmd measure_temp')
   cpu_temp = dev.read()[5:-3]
@@ -32,8 +30,8 @@ def drive(direction, heading, duty):
     command += heading
     command += duty
   command += "\r"
-  sio.write(unicode(command))
-  sio.flush()
+  connect_io.sio.write(unicode(command))
+  connect_io.sio.flush()
   print(command)
 
 @route('/')

@@ -122,10 +122,6 @@ void process_command()
       // Drive command
       motors_go_tank(command_in[2], command_in[3], command_in[4]);
     }
-    else if (command_in[1] == 'D')
-    {      
-      motors_go_tank(1, 0, 255);
-    }
     else if (command_in[1] == '?')
     {
       // Do the query action for D
@@ -263,7 +259,7 @@ void motors_go_tank(byte direction, byte heading, byte duty)
   byte duty_forward;
 
   // Lowest usable duty is 200, so proportion in %
-  if ((duty < 1) | (duty > 5)) duty_left = duty_right = 0;
+  if ((duty < 1) | (duty > 5)) duty_forward = 0;
   else duty_forward = 200 + (55 * duty / 5);
   
   if (heading == LEFT)
