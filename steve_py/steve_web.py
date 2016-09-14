@@ -36,8 +36,10 @@ def drive(direction, heading, duty):
 
 @route('/')
 def index():
+  os.system('flite -voice awb -t "Thank you for tuning in."')
   return template('main.html')
+
+os.system('flite -voice awb -t "Steve is going online."')
 
 run(host='0.0.0.0', port=80)
 
-os.system('flite -voice awb -t "Steve is now online."')
