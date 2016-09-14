@@ -2,8 +2,11 @@
 
 import serial, io
  
-ser = serial.Serial('/dev/ttyACM0', 115200, timeout=1)
-print("Connecting to Arduino")
-print(ser.name)
-
-sio = io.TextIOWrapper(io.BufferedRWPair(ser, ser))
+try:
+  ser = serial.Serial('/dev/ttyACM0', 115200, timeout=1)
+  print("Connected to Arduino")
+  print(ser.name)
+  sio = io.TextIOWrapper(io.BufferedRWPair(ser, ser))
+  break
+except:
+  print "Arduino not found - is it plugged in?"

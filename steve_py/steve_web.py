@@ -39,3 +39,5 @@ def index():
   return template('main.html')
 
 run(host='0.0.0.0', port=80)
+
+os.system('flite -voice awb -t "Steve is now online."')
