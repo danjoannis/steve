@@ -2,7 +2,6 @@
 
 import connect_io, os, time, io, warehouse
 from bottle import route, run, template
-from multiprocessing import Process
 
 def cpu_temp():
   dev = os.popen('/opt/vc/bin/vcgencmd measure_temp')
@@ -39,9 +38,8 @@ def drive(direction, heading, duty):
 def index():
   return template('main.html')
 
-#run(host='0.0.0.0', port=80)
-t = Process(target=bottle.run, kwargs=dict(host='0.0.0.0', port=80))
-t.start()
-
 os.system('flite -voice awb -t "Steve is going online."')
+
+run(host='0.0.0.0', port=80)
+
 
