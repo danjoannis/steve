@@ -1,0 +1,18 @@
+"Id";"Designator";"Package";"Quantity";"Designation";"Supplier and ref";
+1;"D1,D2";"SMA_Handsoldering";2;"D";;;
+2;"P1";"TerminalBlock_Pheonix_PT-3.5mm_2pol";1;"BATT_1";;;
+3;"P2";"TerminalBlock_Pheonix_PT-3.5mm_2pol";1;"BATT_2";;;
+4;"P3";"TerminalBlock_Pheonix_PT-3.5mm_2pol";1;"BATT_3";;;
+5;"P4";"TerminalBlock_Pheonix_PT-3.5mm_2pol";1;"BATT_4";;;
+6;"P6";"TerminalBlock_Pheonix_PT-3.5mm_2pol";1;"MOTORS";;;
+7;"P7";"TerminalBlock_Pheonix_PT-3.5mm_2pol";1;"5V_PI";;;
+8;"P8";"TerminalBlock_Pheonix_PT-3.5mm_2pol";1;"5V_AVR";;;
+9;"Q1,Q2";"TO-252-2Lead";2;"Q_NMOS_GDS";;;
+10;"R1";"Resistor_Horizontal_RM10mm";1;"33k";;;
+11;"R2,R5,R6";"Resistor_Horizontal_RM10mm";3;"15k";;;
+12;"R3,R4";"Resistor_Horizontal_RM10mm";2;"220";;;
+13;"U1";"LM2596S_CARRIER";1;"LM2596S_Carrier";;;
+14;"P10";"Pin_Header_Straight_1x05";1;"AVR_INTERFACE";;;
+15;"P9";"TerminalBlock_Pheonix_PT-3.5mm_2pol";1;"5V_AUX";;;
+16;"P11,P12,P13,P14";"MOUNT_HOLE";4;"MOUNT_HOLE";;;
+17;"P5";"TerminalBlock_Pheonix_PT-3.5mm_2pol";1;"BATT_AUX";;;
