@@ -18,6 +18,11 @@
 #define MOTOR_B1 33  // IN3
 #define MOTOR_B2 34  // IN4
 
+// Power Board
+#define MOTOR_PWR_EN 37
+#define PI_PWR_EN 36
+#define BATT_V_PIN A0
+
 #define NEUTRAL '0'
 #define FORWARD '1'
 #define REVERSE '2'
@@ -70,6 +75,7 @@ void setup() {
   motors_init();
   us_init();
   MPU_init();
+  pwr_init();
 
   // Serial welcome
   Serial.print("Hello. My name is STEVE. \r\n");
@@ -145,6 +151,11 @@ void process_command()
       else if (command_in[2] == 'M')  // Magnetometer
       {
         MPU_read(); 
+      }
+      else if (command_in[2] == 'B')  // Battery
+      {
+        Serial.print(String((float)(16 * (float)analogRead(BATT_V_PIN) / 1023)));
+        Serial.print("\r\n");
       }
     }
     break;
@@ -222,6 +233,17 @@ uint16_t us_measure()
     return US_NO_OBSTACLE;  //No obstacle
   else
     return (result>>1);
+}
+
+void pwr_init()
+{
+  // Configure outputs
+  pinMode(MOTOR_PWR_EN, OUTPUT);
+  pinMode(PI_PWR_EN, OUTPUT);
+
+  // For now, default enable
+  digitalWrite(MOTOR_PWR_EN, HIGH);
+  digitalWrite(PI_PWR_EN, HIGH);
 }
 
 void motors_init()
