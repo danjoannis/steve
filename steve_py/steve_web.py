@@ -1,6 +1,6 @@
 #!/usr/bin/env python
 
-import connect_io, os, time, io, warehouse
+import connect_io, os, time, io, urllib2, netifaces
 from bottle import route, run, template
 
 def cpu_temp():
@@ -20,6 +20,12 @@ def temp():
 def distance_front():
   return warehouse.distanceFront
 
+@route('/vbatt')
+def getDistanceFront():
+  connect_io.sio.write(unicode("Q?B\r"))
+  connect_io.sio.flush()
+  return connect_io.sio.readline()
+
 @route('/drive/<direction>/<heading>/<duty>')
 def drive(direction, heading, duty):
   command = "D="
@@ -30,6 +36,7 @@ def drive(direction, heading, duty):
     command += heading
     command += duty
   command += "\r"
+  connect_io.sio.flush()
   connect_io.sio.write(unicode(command))
   connect_io.sio.flush()
   print(command)
@@ -38,7 +45,11 @@ def drive(direction, heading, duty):
 def index():
   return template('main.html')
 
-os.system('flite -voice awb -t "Steve is going online."')
+# os.system('flite -voice awb -t "Steve is going online."')
+
+netifaces.ifaddresses('wlan0')
+ip = netifaces.ifaddresses('wlan0')[2][0]['addr']
+urllib2.urlopen("http://danjoannis.com/steve/set_steve.php?ip=" + ip).read()
 
 run(host='0.0.0.0', port=80)
 
