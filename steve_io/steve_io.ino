@@ -154,7 +154,7 @@ void process_command()
       }
       else if (command_in[2] == 'B')  // Battery
       {
-        Serial.print(String((float)(16 * (float)analogRead(BATT_V_PIN) / 1023)));
+        Serial.print(String(get_battery_voltage()));
         Serial.print("\r\n");
       }
     }
@@ -233,6 +233,11 @@ uint16_t us_measure()
     return US_NO_OBSTACLE;  //No obstacle
   else
     return (result>>1);
+}
+
+float get_battery_voltage()
+{
+  return (16 * (float)analogRead(BATT_V_PIN) / 1023);
 }
 
 void pwr_init()
