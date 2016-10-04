@@ -26,6 +26,18 @@ def getDistanceFront():
   connect_io.sio.flush()
   return connect_io.sio.readline()
 
+@route('/enable_motors')
+def enableMotorPower():
+  connect_io.sio.write(unicode("PME\r"))
+  connect_io.sio.flush()
+  print("INFO: Motors enabled")
+  
+@route('/disable_motors')
+def disableMotorPower():
+  connect_io.sio.write(unicode("PMD\r"))
+  connect_io.sio.flush()
+  print("INFO: Motors disabled")
+
 @route('/drive/<direction>/<heading>/<duty>')
 def drive(direction, heading, duty):
   command = "D="

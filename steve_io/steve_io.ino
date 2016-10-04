@@ -122,16 +122,39 @@ void process_command()
 {
   switch (command_in[0])
   {
+  case 'P':               // Power command  
+    if (command_in[1] == 'M') // Motors
+    {
+      if (command_in[2] == 'E')
+      {
+        // Enable motor power
+        digitalWrite(MOTOR_PWR_EN, HIGH);
+      }
+      else if (command_in[2] == 'D')
+      {
+        // Disable motor power
+        digitalWrite(MOTOR_PWR_EN, LOW);
+      }
+    }
+    else if (command_in[1] == 'C') // Computer (RPi)
+    {
+      if (command_in[2] == 'E')
+      {
+        // Enable RPi power
+        digitalWrite(PI_PWR_EN, HIGH);
+      }
+      else if (command_in[2] == 'D')
+      {
+        // Disable RPi power
+        digitalWrite(PI_PWR_EN, LOW);
+      }      
+    }
+    break;
   case 'D':               // Drive command
     if (command_in[1] == '=')
     {
       // Drive command
       motors_go_tank(command_in[2], command_in[3], command_in[4]);
-    }
-    else if (command_in[1] == '?')
-    {
-      // Do the query action for D
-      Serial.print("Drive\r\n");
     }
     else if (command_in[1] == 'S')
     {
@@ -246,9 +269,15 @@ void pwr_init()
   pinMode(MOTOR_PWR_EN, OUTPUT);
   pinMode(PI_PWR_EN, OUTPUT);
 
-  // For now, default enable
-  digitalWrite(MOTOR_PWR_EN, HIGH);
-  digitalWrite(PI_PWR_EN, HIGH);
+  // Default OFF
+  digitalWrite(MOTOR_PWR_EN, LOW);
+  digitalWrite(PI_PWR_EN, LOW);
+
+  // If cell voltage is high enough, enable Raspberry Pi
+  if(get_battery_voltage() > 6.6)
+  {
+    digitalWrite(PI_PWR_EN, HIGH);
+  }
 }
 
 void motors_init()
@@ -274,32 +303,34 @@ void motors_go_tank(byte direction, byte heading, byte duty)
   // Reset motors to off
   motors_stop_tank();
   
-  if (duty == '0') duty = 0;
-  else if (duty == '1') duty = 1;
-  else if (duty == '2') duty = 2;
-  else if (duty == '3') duty = 3;
-  else if (duty == '4') duty = 4;
-  else if (duty == '5') duty = 5;
-  
   byte duty_left;
   byte duty_right;
   byte duty_forward;
-
-  // Lowest usable duty is 200, so proportion in %
-  if ((duty < 1) | (duty > 5)) duty_forward = 0;
-  else duty_forward = 200 + (55 * duty / 5);
   
-  if (heading == LEFT)
+  if (duty == '0') duty = 0;
+  else if (duty == '1') duty_forward = 180;
+  else if (duty == '2') duty_forward = 190;
+  else if (duty == '3') duty_forward = 200;
+  else if (duty == '4') duty_forward = 225;
+  else if (duty == '5') duty_forward = 255;
+  
+  /* Lowest usable duty is 200, so proportion in %
+  if ((duty < 1) | (duty > 5)) duty_forward = 0;
+  else duty_forward = 150 + (105 * duty / 5);
+  */
+  
+  if (heading == CENTRE)
+  {
+    duty_left = duty_forward;
+    duty_right = duty_forward;
+  }
+  else if (heading == LEFT)
   {
     duty_left = 0;
   }
   else if (heading == RIGHT)
   {
     duty_right = 0;
-  }
-  else if (heading == CENTRE)
-  {
-    duty_left = duty_right = duty_forward;
   }
   
   if (direction == FORWARD)
@@ -319,21 +350,25 @@ void motors_go_tank(byte direction, byte heading, byte duty)
     {
       digitalWrite(MOTOR_A2, HIGH);
       digitalWrite(MOTOR_B1, HIGH);
-      duty_left = duty_right = duty_forward;
+      duty_left = duty_forward;
+      duty_right = duty_forward;
     }
     else if (heading == RIGHT)
     {
       digitalWrite(MOTOR_A1, HIGH);
       digitalWrite(MOTOR_B2, HIGH);
-      duty_left = duty_right = duty_forward;
+      duty_left = duty_forward;
+      duty_right = duty_forward;
     }
   }
   else if (direction == BRAKE)
-  {    
+  {     
+    /* Doesn't really have a purpose right now   
     digitalWrite(MOTOR_A1, HIGH);
     digitalWrite(MOTOR_A2, HIGH);
     digitalWrite(MOTOR_B1, HIGH);
     digitalWrite(MOTOR_B2, HIGH);
+    */
   }
 
   analogWrite(MOTOR_ENA, duty_left);
