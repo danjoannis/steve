@@ -1,12 +1,16 @@
 #!/usr/bin/env python
 
-import connect_io, os, time, io, urllib2, netifaces
+import connect_io, os, time, io, urllib2, netifaces, watchdog
 from bottle import route, run, template
 
 def cpu_temp():
   dev = os.popen('/opt/vc/bin/vcgencmd measure_temp')
   cpu_temp = dev.read()[5:-3]
   return cpu_temp
+
+@route('/poweroff')
+def power_off():
+  os.system("sudo poweroff")
 
 @route('/time')
 def pi_time():
@@ -64,5 +68,3 @@ ip = netifaces.ifaddresses('wlan0')[2][0]['addr']
 urllib2.urlopen("http://danjoannis.com/steve/set_steve.php?ip=" + ip).read()
 
 run(host='0.0.0.0', port=80)
-
-
