@@ -18,7 +18,10 @@ class ipCheck (threading.Thread):
     print "Starting " + self.name
     while 1:
       # Do work here
-      setSteveIp()
+      try:
+        setSteveIp()
+      except:
+        print "Error updating IP"
       time.sleep(10)
       if exitFlag:
         self.name.exit()

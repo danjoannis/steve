@@ -1,6 +1,6 @@
 #!/usr/bin/env python
 
-import connect_io, os, time, io, urllib2, netifaces, watchdog
+import connect_io, os, time, io, urllib2, netifaces
 from bottle import route, run, template
 
 def cpu_temp():
@@ -18,11 +18,13 @@ def pi_time():
 
 @route('/cputemp')
 def temp():
-  return warehouse.cpuTemp
+  #return warehouse.cpuTemp
+  return "Not implemented"
 
 @route('/distance_front')
 def distance_front():
-  return warehouse.distanceFront
+  #return warehouse.distanceFront
+  return "Not implemented"
 
 @route('/vbatt')
 def getDistanceFront():
